@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QvideoListTree</class>
+ <widget class="QWidget" name="QvideoListTree">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QvideoListTree</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTreeView" name="treeView">
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> QTreeView{
+        border: 1px solid lightgray;
+    }
+    QTreeView::item {
+            height: 40px;
+            border-radius: 2px;
+            border: 1px solid transparent;
+            background: transparent;
+            color: black;
+    }
+    QTreeView::item:hover {
+            border: 1px solid rgb(185, 215, 250);
+   background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 rgb(230, 240, 250), stop: 0.5 rgb(220, 235, 255), stop: 1.0 rgb(210, 230, 255));
+
+    }
+    QTreeView::item:selected {
+            border: 1px solid rgb(170, 190, 230);
+padding: -1;
+			background-color: rgb(185, 215, 250);
+         
+    }
+    QTreeView::branch:open:has-children {
+          
+    }
+    QTreeView::branch:closed:has-children {
+           
+    };</string>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::SingleSelection</enum>
+     </property>
+     <property name="selectionBehavior">
+      <enum>QAbstractItemView::SelectRows</enum>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

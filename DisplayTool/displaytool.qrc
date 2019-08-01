@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/DisplayTool">
+        <file alias="24_c_z.png">Resources/24_c_z.png</file>
+    </qresource>
+</RCC>
