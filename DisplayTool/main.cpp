@@ -1,5 +1,6 @@
 #include "displaytool.h"
 #include <QtWidgets/QApplication>
+#include "QFixMainWindow.h"
 
 int main(int argc, char *argv[])
 {
@@ -7,7 +8,8 @@ int main(int argc, char *argv[])
 	QString strPlugins = QCoreApplication::applicationDirPath() + "/plugins";
 	QCoreApplication::addLibraryPath(strPlugins);
 
-	DisplayTool w;
-	w.showMaximized();
+	//DisplayTool w;
+	QFixMainWindow w;
+	w.ShowHomePage();
 	return a.exec();
 }

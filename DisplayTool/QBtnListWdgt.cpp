@@ -4,7 +4,7 @@
 #include "QApplication"
 #include "QDesktopWidget"
 
-const  int iCloumnNum = 3;
+const  int c_iCloumnNum = 3;
 
 QBtnListWdgt::QBtnListWdgt(QWidget *parent)
 	: QWidget(parent)
@@ -60,11 +60,18 @@ void QBtnListWdgt::InitUIByData(QPlayData* pPlayData)
 	//£¡´´½¨°´Å¥
 	if(pPlayData && pPlayData->HaveChild())
 	{
+		int iCloumnCount = c_iCloumnNum;
+		int iBtnSize = pPlayData->children.size();
+		if(iBtnSize == 4)
+		{
+			iCloumnCount = 2;
+		}
+
 		for (int iBtnIndex = 0; iBtnIndex <pPlayData->children.size(); iBtnIndex++)
 		{
-			QHomeBtnItem* pHomeBtnItemWgt = new QHomeBtnItem(ui.scrollAreaWidget, m_DeskTopRect.width()/(iCloumnNum+1), m_DeskTopRect.height()/4);
+			QHomeBtnItem* pHomeBtnItemWgt = new QHomeBtnItem(ui.scrollAreaWidget, m_DeskTopRect.width()/(c_iCloumnNum+1), m_DeskTopRect.height()/4);
 			pHomeBtnItemWgt->setPlayData(iBtnIndex, pPlayData->children[iBtnIndex]);
-			m_gridHomeBtnLay->addWidget(pHomeBtnItemWgt, iBtnIndex/3, iBtnIndex%3);
+			m_gridHomeBtnLay->addWidget(pHomeBtnItemWgt, iBtnIndex/iCloumnCount, iBtnIndex%iCloumnCount);
 			//m_gridHomeBtnLay->setRowStretch(iBtnIndex/3,1);
 			//m_gridHomeBtnLay->setColumnStretch(iBtnIndex%3, 1);
 			connect(pHomeBtnItemWgt, SIGNAL(SignalClkIndexBtn(int)), this, SLOT(SlotClkBtnIndex(int)));

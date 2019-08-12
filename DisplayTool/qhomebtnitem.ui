@@ -1,69 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>QHomeBtnItem</class>
- <widget class="QWidget" name="QHomeBtnItem">
+ <widget class="QPushButton" name="QHomeBtnItem">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
     <width>469</width>
-    <height>168</height>
+    <height>319</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>QHomeBtnItem</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: transparent;</string>
+  </property>
+  <property name="text">
+   <string/>
+  </property>
   <layout class="QHBoxLayout" name="horizontalLayout">
    <item>
-    <widget class="QPushButton" name="pushButton">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>0</width>
-       <height>150</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>16777215</width>
-       <height>300</height>
-      </size>
-     </property>
+    <widget class="QBtnImgLabel" name="label">
      <property name="font">
       <font>
        <family>微软雅黑</family>
-       <pointsize>19</pointsize>
+       <pointsize>34</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">QPushButton{
-outline:0px;
-background-color: #4a86ff;
-color: rgb(255, 255, 255);
-border-radius:2px;
-}
-QPushButton:hover{outline:0px;background-color:#024ad9  ; }
-QPushButton:pressed
-{
-    padding-left:2px;
-    padding-top:2px;
-}
-QPushButton:!enabled{background-color:#d2d2d2;}
+      <string notr="true">background-color: transparent;
+color: #02e4fa;
+
+
 </string>
      </property>
      <property name="text">
-      <string>PushButton</string>
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="displaytool.qrc">:/DisplayTool/home3.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
    </item>
   </layout>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <customwidgets>
+  <customwidget>
+   <class>QBtnImgLabel</class>
+   <extends>QLabel</extends>
+   <header location="global">qbtnimglabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="displaytool.qrc"/>
+ </resources>
  <connections/>
 </ui>

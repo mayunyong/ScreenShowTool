@@ -25,13 +25,13 @@ private slots:
 	//！点击按钮
 	void SlotClkBtnIndex(int iBtnIndex);
 	void SlotShowHomePage();
-	void SlotShowPlayData(QPlayData* pPlayData,  int iIndex);
+	//void SlotShowPlayData(QPlayData* pPlayData,  int iIndex);
 	void SlotShowBackPage();
 private:
 	//！播放数据
 	CPlayData m_playData;
 	//!按钮页面map
-	QMap<int, QBtnListWdgt*> m_BtnPageMap;
+	//QMap<int, QBtnListWdgt*> m_BtnPageMap;
 };
 
 #endif // DISPLAYTOOL_H

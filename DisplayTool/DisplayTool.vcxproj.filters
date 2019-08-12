@@ -33,12 +33,15 @@
       <Extensions>cpp;moc</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
+    <Filter Include="player">
+      <UniqueIdentifier>{9f39b169-c340-4560-af71-2f117eaf8d1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{6ea10244-bb4d-4a88-934e-8f07bf9e8e70}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="displaytool.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="GeneratedFiles\Debug\moc_displaytool.cpp">
@@ -50,35 +53,11 @@
     <ClCompile Include="GeneratedFiles\qrc_displaytool.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
-    <ClCompile Include="QvideoListTree.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_QvideoListTree.cpp">
-      <Filter>Generated Files\Debug</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_QvideoListTree.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="qtreedefmodel.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_qtreedefmodel.cpp">
-      <Filter>Generated Files\Debug</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_qtreedefmodel.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="QPlayer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="GeneratedFiles\Debug\moc_QPlayer.cpp">
       <Filter>Generated Files\Debug</Filter>
     </ClCompile>
     <ClCompile Include="GeneratedFiles\Release\moc_QPlayer.cpp">
       <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="QVedioSlider.cpp">
-      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="GeneratedFiles\Debug\moc_QVedioSlider.cpp">
       <Filter>Generated Files\Debug</Filter>
@@ -86,26 +65,17 @@
     <ClCompile Include="GeneratedFiles\Release\moc_QVedioSlider.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
-    <ClCompile Include="QHeaderWgt.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="GeneratedFiles\Debug\moc_QHeaderWgt.cpp">
       <Filter>Generated Files\Debug</Filter>
     </ClCompile>
     <ClCompile Include="GeneratedFiles\Release\moc_QHeaderWgt.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
-    <ClCompile Include="qcontrolwidgt.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="GeneratedFiles\Debug\moc_qcontrolwidgt.cpp">
       <Filter>Generated Files\Debug</Filter>
     </ClCompile>
     <ClCompile Include="GeneratedFiles\Release\moc_qcontrolwidgt.cpp">
       <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="PlayData.cpp">
-      <Filter>Header Files</Filter>
     </ClCompile>
     <ClCompile Include="qhomebtnitem.cpp">
       <Filter>Source Files</Filter>
@@ -116,13 +86,58 @@
     <ClCompile Include="GeneratedFiles\Release\moc_qhomebtnitem.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
-    <ClCompile Include="QBtnListWdgt.cpp">
+    <ClCompile Include="QPlayer.cpp">
+      <Filter>player</Filter>
+    </ClCompile>
+    <ClCompile Include="QVedioSlider.cpp">
+      <Filter>player</Filter>
+    </ClCompile>
+    <ClCompile Include="qcontrolwidgt.cpp">
+      <Filter>player</Filter>
+    </ClCompile>
+    <ClCompile Include="QHeaderWgt.cpp">
+      <Filter>player</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayData.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="displaytool.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_QBtnListWdgt.cpp">
+    <ClCompile Include="QFixMainWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QFixMainWindow.cpp">
       <Filter>Generated Files\Debug</Filter>
     </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_QBtnListWdgt.cpp">
+    <ClCompile Include="GeneratedFiles\Release\moc_QFixMainWindow.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="QHomeWgt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QHomeWgt.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QHomeWgt.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="QBGBaseWgt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QBGBaseWgt.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QBGBaseWgt.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="QBtnImgLabel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QBtnImgLabel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QBtnImgLabel.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
   </ItemGroup>
@@ -136,32 +151,14 @@
     <CustomBuild Include="displaytool.qrc">
       <Filter>Resource Files</Filter>
     </CustomBuild>
-    <CustomBuild Include="QvideoListTree.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
     <CustomBuild Include="QvideoListTree.ui">
       <Filter>Form Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="qtreedefmodel.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="QPlayer.h">
-      <Filter>Header Files</Filter>
     </CustomBuild>
     <CustomBuild Include="QPlayer.ui">
       <Filter>Form Files</Filter>
     </CustomBuild>
-    <CustomBuild Include="QVedioSlider.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="QHeaderWgt.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
     <CustomBuild Include="QHeaderWgt.ui">
       <Filter>Form Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="qcontrolwidgt.h">
-      <Filter>Header Files</Filter>
     </CustomBuild>
     <CustomBuild Include="qcontrolwidgt.ui">
       <Filter>Form Files</Filter>
@@ -172,10 +169,40 @@
     <CustomBuild Include="qhomebtnitem.ui">
       <Filter>Form Files</Filter>
     </CustomBuild>
-    <CustomBuild Include="QBtnListWdgt.h">
+    <CustomBuild Include="QBtnListWdgt.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QHeaderWgt.h">
+      <Filter>player</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QPlayer.h">
+      <Filter>player</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QVedioSlider.h">
+      <Filter>player</Filter>
+    </CustomBuild>
+    <CustomBuild Include="qcontrolwidgt.h">
+      <Filter>player</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QFixMainWindow.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
-    <CustomBuild Include="QBtnListWdgt.ui">
+    <CustomBuild Include="QFixMainWindow.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QHomeWgt.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QHomeWgt.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QBGBaseWgt.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QBtnImgLabel.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QBtnImgLabel.ui">
       <Filter>Form Files</Filter>
     </CustomBuild>
   </ItemGroup>
@@ -195,13 +222,25 @@
     <ClInclude Include="GeneratedFiles\ui_qcontrolwidgt.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
-    <ClInclude Include="PlayData.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="GeneratedFiles\ui_qhomebtnitem.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
     <ClInclude Include="GeneratedFiles\ui_QBtnListWdgt.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayData.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_QFixMainWindow.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_QHomeWgt.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UserDef.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_QBtnImgLabel.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,5 +1,12 @@
 <RCC>
     <qresource prefix="/DisplayTool">
         <file alias="24_c_z.png">Resources/24_c_z.png</file>
+        <file alias="HomePage.jpg">Resources/HomePage.jpg</file>
+        <file alias="home1.png">Resources/home/home1.png</file>
+        <file alias="home2.png">Resources/home/home2.png</file>
+        <file alias="home3.png">Resources/home/home3.png</file>
+        <file alias="home4.png">Resources/home/home4.png</file>
+        <file alias="home5.png">Resources/home/home5.png</file>
+        <file alias="HomePage.png">Resources/HomePage.png</file>
     </qresource>
 </RCC>
