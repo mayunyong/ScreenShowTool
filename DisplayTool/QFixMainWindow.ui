@@ -18,13 +18,28 @@
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
     <item>
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="styleSheet">
        <string notr="true"/>
       </property>
       <widget class="QHomeWgt" name="page"/>
-      <widget class="QWidget" name="page_2"/>
+      <widget class="QFixSecondPage" name="page_2"/>
      </widget>
     </item>
    </layout>
@@ -36,6 +51,12 @@
    <class>QHomeWgt</class>
    <extends>QWidget</extends>
    <header location="global">qhomewgt.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QFixSecondPage</class>
+   <extends>QWidget</extends>
+   <header location="global">qfixsecondpage.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include "ui_QFixMainWindow.h"
 #include "QRect"
+#include "PlayData.h"
 
 class QFixMainWindow : public QMainWindow
 {
@@ -16,9 +17,16 @@ public:
 public:
 	void ShowHomePage();
 
+private slots:
+	//!点击某个指定按钮
+	void SlotClkIndexBtn(const QPlayInfo* pStPlayDta);
+
 private:
 	Ui::QFixMainWindow ui;
 	QRect m_DeskRect;
+	//!播放数据
+	CPlayData m_playDataObj;
+	//QPlayData* m_pPlayData;
 };
 
 #endif // QFIXMAINWINDOW_H

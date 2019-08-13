@@ -8,5 +8,29 @@
         <file alias="home4.png">Resources/home/home4.png</file>
         <file alias="home5.png">Resources/home/home5.png</file>
         <file alias="HomePage.png">Resources/HomePage.png</file>
+        <file alias="Second1.png">Resources/Second/Folder/Second1.png</file>
+        <file alias="Second2.png">Resources/Second/Folder/Second2.png</file>
+        <file alias="Second3.png">Resources/Second/Folder/Second3.png</file>
+        <file alias="Second4.png">Resources/Second/Folder/Second4.png</file>
+        <file alias="Second5.png">Resources/Second/Folder/Second5.png</file>
+        <file alias="Second6.png">Resources/Second/Folder/Second6.png</file>
+        <file alias="Second7.png">Resources/Second/Folder/Second7.png</file>
+        <file alias="Second8.png">Resources/Second/Folder/Second8.png</file>
+        <file alias="Second9.png">Resources/Second/Folder/Second9.png</file>
+        <file alias="SecondVideo1.png">Resources/Second/Video/SecondVideo1.png</file>
+        <file alias="SecondVideo2.png">Resources/Second/Video/SecondVideo2.png</file>
+        <file alias="SecondVideo3.png">Resources/Second/Video/SecondVideo3.png</file>
+        <file alias="SecondVideo4.png">Resources/Second/Video/SecondVideo4.png</file>
+        <file alias="SecondVideo5.png">Resources/Second/Video/SecondVideo5.png</file>
+        <file alias="SecondVideo6.png">Resources/Second/Video/SecondVideo6.png</file>
+        <file alias="SecondVideo7.png">Resources/Second/Video/SecondVideo7.png</file>
+        <file alias="SecondVideo8.png">Resources/Second/Video/SecondVideo8.png</file>
+        <file alias="SecondVideo9.png">Resources/Second/Video/SecondVideo9.png</file>
+        <file alias="SecondPage.png">Resources/SecondPage.png</file>
+        <file alias="HomeText1.png">Resources/HomeText/HomeText1.png</file>
+        <file alias="HomeText2.png">Resources/HomeText/HomeText2.png</file>
+        <file alias="HomeText3.png">Resources/HomeText/HomeText3.png</file>
+        <file alias="HomeText4.png">Resources/HomeText/HomeText4.png</file>
+        <file alias="HomeText5.png">Resources/HomeText/HomeText5.png</file>
     </qresource>
 </RCC>

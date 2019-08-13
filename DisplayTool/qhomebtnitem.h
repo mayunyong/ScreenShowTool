@@ -7,8 +7,9 @@
 #include "PlayData.h"
 #include "UserDef.h"
 #include "QPushButton"
+#include "QVideoBaseBtn.h"
 
-class QHomeBtnItem : public QPushButton
+class QHomeBtnItem : public QVideoBaseBtn
 {
 	Q_OBJECT
 
@@ -16,16 +17,17 @@ public:
 	QHomeBtnItem(QWidget *parent = 0, QSize btnSize = QSize(1920,1080));
 	~QHomeBtnItem();
 
-	void setPlayData(int iBtnIndex,  const QPlayData& ePlayDta);
+	void setPlayData(int iBtnIndex,  const QPlayInfo* pStPlayDta);
 
-	void setUIInfo(EN_PageType m_ePageType, int iNum);
+	void setUIInfo(EN_PageType m_ePageType, int iNum, bool bVideoFlag = false);
+
 signals:
-	void SignalClkIndexBtn(int iBtnIndex);
+	void SignalClkIndexBtn(const QPlayInfo* pStPlayDta);
 
 private:
 	Ui::QHomeBtnItem ui;
 	int m_iBtnIndex;
-	QPlayData m_playData;
+	const QPlayInfo* m_pPlayData;
 
 private slots: 
 	void SlotClickBtn();

@@ -3,6 +3,8 @@
 
 #include <QLabel>
 #include "ui_QBtnImgLabel.h"
+#include <QTextEdit>
+#include "UserDef.h"
 
 class QBtnImgLabel : public QLabel
 {
@@ -15,6 +17,8 @@ public:
 	void SetIMgText(const QString& strText);
 private:
 	Ui::QBtnImgLabel ui;
+
+	EN_PageType m_pageType;
 };
 
 #endif // QBTNIMGLABEL_H

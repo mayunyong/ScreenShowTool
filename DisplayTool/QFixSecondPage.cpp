@@ -1,32 +1,38 @@
-#include "QHomeWgt.h"
+#include "QFixSecondPage.h"
 
-QHomeWgt::QHomeWgt(QWidget *parent)
+QFixSecondPage::QFixSecondPage(QWidget *parent)
 	: QBGBaseWgt(parent)
 {
 	ui.setupUi(this);
 	//InitHomeButton();
-	m_ePageType = Page_Home;
-	m_pBackGroundixmap= new QPixmap(":/DisplayTool/HomePage.png");
+	m_ePageType = Page_Second;
+	m_pBackGroundixmap= new QPixmap(":/DisplayTool/SecondPage.png");
 }
 
-QHomeWgt::~QHomeWgt()
+QFixSecondPage::~QFixSecondPage()
 {
 
 }
 
-void QHomeWgt::InitAllButton()
+void QFixSecondPage::InitAllButton()
 {
 	//!首页有5个按钮，并且位置固定
+	//show();
 	if(!m_bInifFlag)
 	{
-		AddNewBtn(QPoint(105, 210));
-		AddNewBtn(QPoint(448, 62));
-		AddNewBtn(QPoint(836, 255));
-		AddNewBtn(QPoint(714, 610));
-		AddNewBtn(QPoint(130, 720));
+		AddNewBtn(QPoint(86, 287));
+		AddNewBtn(QPoint(443, 159));
+		AddNewBtn(QPoint(811, 261));
+		AddNewBtn(QPoint(1149, 181));
+		AddNewBtn(QPoint(1505, 271));
+		AddNewBtn(QPoint(86, 647));
+		AddNewBtn(QPoint(497, 607));
+		AddNewBtn(QPoint(975, 611));
+		AddNewBtn(QPoint(1409, 639));
 
 		m_bInifFlag = true;
 	}
+
 
 	if(m_pPlayData->children.size() > 0)
 	{
@@ -44,4 +50,3 @@ void QHomeWgt::InitAllButton()
 	}
 
 }
-

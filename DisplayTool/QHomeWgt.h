@@ -18,7 +18,7 @@ public:
 
 private:
 	//!≥ı ºªØ∞¥≈•
-	void InitHomeButton();
+	void InitAllButton();
 
 	//void AddNewBtn(double wPercent,double hPercent);
 private:
