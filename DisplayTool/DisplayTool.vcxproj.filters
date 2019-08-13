@@ -42,6 +42,12 @@
     <Filter Include="1920_1080">
       <UniqueIdentifier>{d5ba2b83-7568-4aa7-b8be-6280d8fb2e35}</UniqueIdentifier>
     </Filter>
+    <Filter Include="1080_800">
+      <UniqueIdentifier>{d8366af5-60a2-4258-95bb-3bdfce39ecf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form Files\1080_800">
+      <UniqueIdentifier>{90dd5357-c199-4d1e-bc56-59c8b7f7ee39}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -179,14 +185,149 @@
     <ClCompile Include="GeneratedFiles\Release\moc_QVideoBaseBtn.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_Q1080pWindow.cpp">
+    <ClCompile Include="GeneratedFiles\Debug\moc_QHome1Btn_1080.cpp">
       <Filter>Generated Files\Debug</Filter>
     </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_Q1080pWindow.cpp">
+    <ClCompile Include="GeneratedFiles\Release\moc_QHome1Btn_1080.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
-    <ClCompile Include="Q1080pWindow.cpp">
-      <Filter>1920_1080</Filter>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QHome2Btn_1080.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QHome2Btn_1080.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QHome3Btn_1080.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QHome3Btn_1080.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QHome4Btn_1080.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QHome4Btn_1080.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QHome5Btn_1080.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QHome5Btn_1080.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="QHome1Btn_1080.cpp">
+      <Filter>1080_800</Filter>
+    </ClCompile>
+    <ClCompile Include="QHome5Btn_1080.cpp">
+      <Filter>1080_800</Filter>
+    </ClCompile>
+    <ClCompile Include="QHome2Btn_1080.cpp">
+      <Filter>1080_800</Filter>
+    </ClCompile>
+    <ClCompile Include="QHome3Btn_1080.cpp">
+      <Filter>1080_800</Filter>
+    </ClCompile>
+    <ClCompile Include="QHome4Btn_1080.cpp">
+      <Filter>1080_800</Filter>
+    </ClCompile>
+    <ClCompile Include="QHomeTextBtn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QHomeTextBtn.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QHomeTextBtn.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QSecondBtn1_1080.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QSecondBtn1_1080.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QSecondBtn2_1080.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QSecondBtn2_1080.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QSecondBtn3_1080.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QSecondBtn3_1080.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QSecondBtn4_1080.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QSecondBtn4_1080.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QSecondBtn5_1080.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QSecondBtn5_1080.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QSecondBtn6_1080.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QSecondBtn6_1080.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qsecondbtn7_1080.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qsecondbtn7_1080.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QSecondBtn8_1080.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QSecondBtn8_1080.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QSecondBtn9_1080.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QSecondBtn9_1080.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="QSecondBaseBtn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QSecondBaseBtn.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QSecondBaseBtn.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="QSecondBtn1_1080.cpp">
+      <Filter>1080_800</Filter>
+    </ClCompile>
+    <ClCompile Include="QSecondBtn9_1080.cpp">
+      <Filter>1080_800</Filter>
+    </ClCompile>
+    <ClCompile Include="QSecondBtn2_1080.cpp">
+      <Filter>1080_800</Filter>
+    </ClCompile>
+    <ClCompile Include="QSecondBtn3_1080.cpp">
+      <Filter>1080_800</Filter>
+    </ClCompile>
+    <ClCompile Include="QSecondBtn4_1080.cpp">
+      <Filter>1080_800</Filter>
+    </ClCompile>
+    <ClCompile Include="QSecondBtn5_1080.cpp">
+      <Filter>1080_800</Filter>
+    </ClCompile>
+    <ClCompile Include="QSecondBtn6_1080.cpp">
+      <Filter>1080_800</Filter>
+    </ClCompile>
+    <ClCompile Include="qsecondbtn7_1080.cpp">
+      <Filter>1080_800</Filter>
+    </ClCompile>
+    <ClCompile Include="QSecondBtn8_1080.cpp">
+      <Filter>1080_800</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -268,11 +409,98 @@
     <CustomBuild Include="QVideoBaseBtn.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
-    <CustomBuild Include="Q1080pWindow.ui">
+    <CustomBuild Include="QHome1Btn_1080.h">
+      <Filter>1080_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QHome5Btn_1080.h">
+      <Filter>1080_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QHome2Btn_1080.h">
+      <Filter>1080_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QHome3Btn_1080.h">
+      <Filter>1080_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QHome4Btn_1080.h">
+      <Filter>1080_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QHome1Btn_1080.ui">
+      <Filter>Form Files\1080_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QHome5Btn_1080.ui">
+      <Filter>Form Files\1080_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QHome2Btn_1080.ui">
+      <Filter>Form Files\1080_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QHome3Btn_1080.ui">
+      <Filter>Form Files\1080_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QHome4Btn_1080.ui">
+      <Filter>Form Files\1080_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QHomeTextBtn.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QHomeTextBtn.ui">
       <Filter>Form Files</Filter>
     </CustomBuild>
-    <CustomBuild Include="Q1080pWindow.h">
-      <Filter>1920_1080</Filter>
+    <CustomBuild Include="QSecondBtn1_1080.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QSecondBtn2_1080.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QSecondBtn3_1080.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QSecondBtn4_1080.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QSecondBtn5_1080.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QSecondBtn6_1080.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="qsecondbtn7_1080.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QSecondBtn8_1080.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QSecondBtn9_1080.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QSecondBtn1_1080.ui">
+      <Filter>Form Files\1080_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QSecondBtn9_1080.ui">
+      <Filter>Form Files\1080_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QSecondBtn2_1080.ui">
+      <Filter>Form Files\1080_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QSecondBtn3_1080.ui">
+      <Filter>Form Files\1080_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QSecondBtn4_1080.ui">
+      <Filter>Form Files\1080_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QSecondBtn5_1080.ui">
+      <Filter>Form Files\1080_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QSecondBtn6_1080.ui">
+      <Filter>Form Files\1080_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="qsecondbtn7_1080.ui">
+      <Filter>Form Files\1080_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QSecondBtn8_1080.ui">
+      <Filter>Form Files\1080_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QSecondBaseBtn.h">
+      <Filter>Header Files</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
@@ -315,7 +543,49 @@
     <ClInclude Include="UserDef.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="GeneratedFiles\ui_Q1080pWindow.h">
+    <ClInclude Include="GeneratedFiles\ui_QHome1Btn_1080.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_QHome2Btn_1080.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_QHome3Btn_1080.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_QHome4Btn_1080.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_QHome5Btn_1080.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_QHomeTextBtn.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_QSecondBtn1_1080.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_QSecondBtn2_1080.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_QSecondBtn3_1080.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_QSecondBtn4_1080.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_QSecondBtn5_1080.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_QSecondBtn6_1080.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_qsecondbtn7_1080.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_QSecondBtn8_1080.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_QSecondBtn9_1080.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
   </ItemGroup>

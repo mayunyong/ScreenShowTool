@@ -1,390 +1,422 @@
 {
-    "page": {
-        "desc": {
-            "1": "首页desc1",
-            "2": "首页这里是描述2"
-        },
-        "child": [
-            {
-                "name": "设计",
-                "fileName": "设计",
-                "isFolder": "1",
-                "display": "1",
-                "page": {
-                    "desc": {
-                        "1": "设计desc1",
-                        "2": "设计这里是描述2"
-                    },
-                    "child": [
-                        {
-                            "name": "初次洽谈",
-                            "fileName": "初次洽谈",
-                            "isFolder": "0",
-                            "display": "1"
-                        },
-                        {
-                            "name": "现场测量",
-                            "fileName": "现场测量",
-                            "isFolder": "0",
-                            "display": "2"
-                        },
-                        {
-                            "name": "概念方案",
-                            "fileName": "概念方案",
-                            "isFolder": "0",
-                            "display": "3"
-                        },
-                        {
-                            "name": "二次到访",
-                            "fileName": "二次到访",
-                            "isFolder": "0",
-                            "display": "4"
-                        },
-                        {
-                            "name": "深化方案",
-                            "fileName": "深化方案",
-                            "isFolder": "0",
-                            "display": "5"
-                        },
-                        {
-                            "name": "图纸审核",
-                            "fileName": "图纸审核",
-                            "isFolder": "0",
-                            "display": "6"
-                        },
-                        {
-                            "name": "报价审核",
-                            "fileName": "报价审核",
-                            "isFolder": "0",
-                            "display": "7"
-                        },
-                        {
-                            "name": "三次到访",
-                            "fileName": "三次到访",
-                            "isFolder": "0",
-                            "display": "8"
-                        },
-                        {
-                            "name": "软装家具",
-                            "fileName": "软装家具",
-                            "isFolder": "0",
-                            "display": "9"
-                        }
-                    ]
-                }
-            },
-            {
-                "name": "施工",
-                "fileName": "施工",
-                "isFolder": "1",
-                "display": "2",
-                "page": {
-                    "desc": {
-                        "1": "施工desc1",
-                        "2": "施工这里是描述2"
-                    },
-                    "child": [
-                        {
-                            "name": "基础材料介绍",
-                            "fileName": "基础材料介绍",
-                            "isFolder": "1",
-                            "display": "1",
-                            "page": {
-                                "desc": {
-                                    "1": "基础材料介绍desc1",
-                                    "2": "基础材料介绍这里是描述2"
-                                },
-                                "child": [
-                                    {
-                                        "name": "材料库材料",
-                                        "fileName": "材料库材料",
-                                        "isFolder": "0",
-                                        "display": "1"
-                                    },
-                                    {
-                                        "name": "2 材料运输保障",
-                                        "fileName": "材料运输保障",
-                                        "isFolder": "0",
-                                        "display": "2"
-                                    },
-                                    {
-                                        "name": "3 工地材料展示",
-                                        "fileName": "工地材料展示",
-                                        "isFolder": "0",
-                                        "display": "3"
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            "name": "材料检验报告",
-                            "fileName": "材料检验报告",
-                            "isFolder": "1",
-                            "display": "2",
-                            "page": {
-                                "desc": {
-                                    "1": "材料检验报告desc1",
-                                    "2": "材料检验报告这里是描述2"
-                                },
-                                "child": [
-                                    {
-                                        "name": "1 无保障的材料危害",
-                                        "fileName": "无保障的材料危害",
-                                        "isFolder": "0",
-                                        "display": "1"
-                                    },
-                                    {
-                                        "name": "2 CMA标识认证体系",
-                                        "fileName": "2 CMA标识认证体系",
-                                        "isFolder": "0",
-                                        "display": "2"
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            "name": "施工规范",
-                            "fileName": "施工规范",
-                            "isFolder": "1",
-                            "display": "3",
-                            "page": {
-                                "desc": {
-                                    "1": "施工规范desc1",
-                                    "2": "施工规范这里是描述2"
-                                },
-                                "child": [
-                                    {
-                                        "name": "整体施工流程",
-                                        "fileName": "材料库材料",
-                                        "isFolder": "0",
-                                        "display": "1"
-                                    },
-                                    {
-                                        "name": "济南城市人家施工流程",
-                                        "fileName": "济南城市人家施工流程",
-                                        "isFolder": "1",
-                                        "display": "2",
-                                        "page": {
-                                            "desc": {
-                                                "1": "济南城市人家施工流程desc1",
-                                                "2": "济南城市人家施工流程这里是描述2"
-                                            },
-                                            "child": [
-                                                {
-                                                    "name": "开工交底",
-                                                    "fileName": "开工交底",
-                                                    "isFolder": "0",
-                                                    "display": "1"
-                                                },
-                                                {
-                                                    "name": "拆除及中央空调、新风施工",
-                                                    "fileName": "拆除及中央空调、新风施工",
-                                                    "isFolder": "0",
-                                                    "display": "2"
-                                                },
-                                                {
-                                                    "name": "水电施工",
-                                                    "fileName": "水电施工",
-                                                    "isFolder": "0",
-                                                    "display": "3"
-                                                },
-                                                {
-                                                    "name": "找平防水",
-                                                    "fileName": "找平防水",
-                                                    "isFolder": "0",
-                                                    "display": "4"
-                                                },
-                                                {
-                                                    "name": "瓦工施工",
-                                                    "fileName": "瓦工施工",
-                                                    "isFolder": "0",
-                                                    "display": "5"
-                                                },
-                                                {
-                                                    "name": "地面找平",
-                                                    "fileName": "地面找平",
-                                                    "isFolder": "0",
-                                                    "display": "6"
-                                                },
-                                                {
-                                                    "name": "材料进场",
-                                                    "fileName": "开工交底",
-                                                    "isFolder": "0",
-                                                    "display": "7"
-                                                },
-                                                {
-                                                    "name": "木工施工",
-                                                    "fileName": "木工施工",
-                                                    "isFolder": "0",
-                                                    "display": "8"
-                                                },
-                                                {
-                                                    "name": "隐蔽中期验收",
-                                                    "fileName": "隐蔽中期验收",
-                                                    "isFolder": "0",
-                                                    "display": "9"
-                                                },
-                                                {
-                                                    "name": "墙面平整度验收",
-                                                    "fileName": "墙面平整度验收",
-                                                    "isFolder": "0",
-                                                    "display": "2_1"
-                                                },
-                                                {
-                                                    "name": "腻子打磨验收",
-                                                    "fileName": "腻子打磨验收",
-                                                    "isFolder": "0",
-                                                    "display": "2_2"
-                                                },
-                                                {
-                                                    "name": "基础竣工验收",
-                                                    "fileName": "基础竣工验收",
-                                                    "isFolder": "0",
-                                                    "display": "2_3"
-                                                },
-                                                {
-                                                    "name": "建材安装",
-                                                    "fileName": "建材安装",
-                                                    "isFolder": "0",
-                                                    "display": "2_4"
-                                                },
-                                                {
-                                                    "name": "工程质保",
-                                                    "fileName": "工程质保",
-                                                    "isFolder": "0",
-                                                    "display": "2_5"
-                                                }
-                                            ]
-                                        }
-                                    },
-                                    {
-                                        "name": "施工管理过程把控",
-                                        "fileName": "施工管理过程把控",
-                                        "isFolder": "1",
-                                        "display": "3",
-                                        "child": [
-                                            {
-                                                "name": "监理日常工作",
-                                                "fileName": "监理日常工作",
-                                                "isFolder": "0",
-                                                "display": "1"
-                                            },
-                                            {
-                                                "name": "施工微信群",
-                                                "fileName": "施工微信群",
-                                                "isFolder": "0",
-                                                "display": "2"
-                                            },
-                                            {
-                                                "name": "周四大巡检",
-                                                "fileName": "周四大巡检",
-                                                "isFolder": "0",
-                                                "display": "3"
-                                            },
-                                            {
-                                                "name": "巡检总结会",
-                                                "fileName": "巡检总结会",
-                                                "isFolder": "0",
-                                                "display": "4"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
-                        }
-                    ]
-                }
-            },
-            {
-                "name": "建材",
-                "fileName": "建材",
-                "isFolder": "1",
-                "display": "3",
-                "page": {
-                    "desc": {
-                        "1": "建材desc1",
-                        "2": "建材这里是描述2"
-                    },
-                    "child": [
-                        {
-                            "name": "复尺测量",
-                            "fileName": "复尺测量",
-                            "isFolder": "0",
-                            "display": "1"
-                        },
-                        {
-                            "name": "安装顺序及加工周期",
-                            "fileName": "安装顺序及加工周期",
-                            "isFolder": "0",
-                            "display": "2"
-                        },
-                        {
-                            "name": "安装施工",
-                            "fileName": "复尺测量",
-                            "isFolder": "0",
-                            "display": "3"
-                        },
-                        {
-                            "name": "项目验收",
-                            "fileName": "项目验收",
-                            "isFolder": "0",
-                            "display": "4"
-                        }
-                    ]
-                }
-            },
-            {
-                "name": "售后",
-                "fileName": "售后",
-                "isFolder": "1",
-                "display": "4",
-                "page": {
-                    "desc": {
-                        "1": "售后desc1",
-                        "2": "售后这里是描述2"
-                    },
-                    "child": [
-                        {
-                            "name": "质保",
-                            "fileName": "质保",
-                            "isFolder": "0",
-                            "display": "1"
-                        },
-                        {
-                            "name": "维修",
-                            "fileName": "维修",
-                            "isFolder": "0",
-                            "display": "2"
-                        }
-                    ]
-                }
-            },
-            {
-                "name": "企业",
-                "fileName": "企业",
-                "isFolder": "1",
-                "display": "5",
-                "page": {
-                    "desc": {
-                        "1": "企业desc1",
-                        "2": "企业这里是描述2"
-                    },
-                    "child": [
-                        {
-                            "name": "企业文化",
-                            "fileName": "企业文化",
-                            "isFolder": "0",
-                            "display": "1"
-                        },
-                        {
-                            "name": "企业成绩",
-                            "fileName": "企业成绩",
-                            "isFolder": "0",
-                            "display": "2"
-                        }
-                    ]
-                }
-            }
-        ]
-    }
+	"page": {
+		"desc": {},
+		"child": [
+		{
+				"name": "施工",
+				"fileName": "施工",
+				"isFolder": "1",
+				"display": "1",
+				"page": {
+					"desc": {
+						"1": "施工desc1",
+						"2": "施工这里是描述2"
+					},
+					"child": [{
+							"num": "1",
+							"name": "基础材料介绍",
+							"fileName": "基础材料介绍",
+							"isFolder": "1",
+							"display": "1",
+							"page": {
+								"desc": {
+									"1": "基础材料介绍desc1",
+									"2": "基础材料介绍这里是描述2"
+								},
+								"child": [{
+										"num": "1",
+										"name": "材料库材料",
+										"fileName": "材料库材料",
+										"isFolder": "0",
+										"display": "1"
+									},
+									{
+										"num": "2",
+										"name": "材料运输保障",
+										"fileName": "材料运输保障",
+										"isFolder": "0",
+										"display": "2"
+									},
+									{
+										"num": "2",
+										"name": "工地材料展示",
+										"fileName": "工地材料展示",
+										"isFolder": "0",
+										"display": "3"
+									}
+								]
+							}
+						},
+						{
+							"num": "2",
+							"name": "材料检验报告",
+							"fileName": "材料检验报告",
+							"isFolder": "1",
+							"display": "2",
+							"page": {
+								"desc": {
+									"1": "材料检验报告desc1",
+									"2": "材料检验报告这里是描述2"
+								},
+								"child": [{
+										"num": "1",
+										"name": "无保障的材料危害",
+										"fileName": "无保障的材料危害",
+										"isFolder": "0",
+										"display": "1"
+									},
+									{
+										"num": "2",
+										"name": "CMA标识认证体系",
+										"fileName": "2 CMA标识认证体系",
+										"isFolder": "0",
+										"display": "2"
+									}
+								]
+							}
+						},
+						{
+							"num": "3",
+							"name": "施工规范",
+							"fileName": "施工规范",
+							"isFolder": "1",
+							"display": "3",
+							"page": {
+								"desc": {
+									"1": "施工规范desc1",
+									"2": "施工规范这里是描述2"
+								},
+								"child": [{
+										"num": "1",
+										"name": "整体施工流程",
+										"fileName": "材料库材料",
+										"isFolder": "0",
+										"display": "1"
+									},
+									{
+										"num": "2",
+										"name": "济南城市人家施工流程",
+										"fileName": "济南城市人家施工流程",
+										"isFolder": "1",
+										"display": "2",
+										"page": {
+											"desc": {
+												"1": "济南城市人家施工流程desc1",
+												"2": "济南城市人家施工流程这里是描述2"
+											},
+											"child": [{
+													"num": "1",
+													"name": "开工交底",
+													"fileName": "开工交底",
+													"isFolder": "0",
+													"display": "1"
+												},
+												{
+													"num": "2",
+													"name": "拆除及中央空调、新风施工",
+													"fileName": "拆除及中央空调、新风施工",
+													"isFolder": "0",
+													"display": "2"
+												},
+												{
+													"num": "3",
+													"name": "水电施工",
+													"fileName": "水电施工",
+													"isFolder": "0",
+													"display": "3"
+												},
+												{
+													"num": "4",
+													"name": "找平防水",
+													"fileName": "找平防水",
+													"isFolder": "0",
+													"display": "4"
+												},
+												{
+													"num": "5",
+													"name": "瓦工施工",
+													"fileName": "瓦工施工",
+													"isFolder": "0",
+													"display": "5"
+												},
+												{
+													"num": "6",
+													"name": "地面找平",
+													"fileName": "地面找平",
+													"isFolder": "0",
+													"display": "6"
+												},
+												{
+													"num": "7",
+													"name": "材料进场",
+													"fileName": "开工交底",
+													"isFolder": "0",
+													"display": "7"
+												},
+												{
+													"num": "8",
+													"name": "木工施工",
+													"fileName": "木工施工",
+													"isFolder": "0",
+													"display": "8"
+												},
+												{
+													"num": "9",
+													"name": "隐蔽中期验收",
+													"fileName": "隐蔽中期验收",
+													"isFolder": "0",
+													"display": "9"
+												},
+												{
+													"num": "10",
+													"name": "墙面平整度验收",
+													"fileName": "墙面平整度验收",
+													"isFolder": "0",
+													"display": "2_1"
+												},
+												{
+													"num": "11",
+													"name": "腻子打磨验收",
+													"fileName": "腻子打磨验收",
+													"isFolder": "0",
+													"display": "2_2"
+												},
+												{
+													"num": "12",
+													"name": "基础竣工验收",
+													"fileName": "基础竣工验收",
+													"isFolder": "0",
+													"display": "2_3"
+												},
+												{
+													"num": "13",
+													"name": "建材安装",
+													"fileName": "建材安装",
+													"isFolder": "0",
+													"display": "2_4"
+												},
+												{
+													"num": "14",
+													"name": "工程质保",
+													"fileName": "工程质保",
+													"isFolder": "0",
+													"display": "2_5"
+												}
+											]
+										}
+									},
+									{
+										"num": "3",
+										"name": "施工管理过程把控",
+										"fileName": "施工管理过程把控",
+										"isFolder": "1",
+										"display": "3",
+										"child": [{
+												"num": "1",
+												"name": "监理日常工作",
+												"fileName": "监理日常工作",
+												"isFolder": "0",
+												"display": "1"
+											},
+											{
+												"num": "2",
+												"name": "施工微信群",
+												"fileName": "施工微信群",
+												"isFolder": "0",
+												"display": "2"
+											},
+											{
+												"num": "3",
+												"name": "周四大巡检",
+												"fileName": "周四大巡检",
+												"isFolder": "0",
+												"display": "3"
+											},
+											{
+												"num": "4",
+												"name": "巡检总结会",
+												"fileName": "巡检总结会",
+												"isFolder": "0",
+												"display": "4"
+											}
+										]
+									}
+								]
+							}
+						}
+					]
+				}
+			},
+			{
+				"name": "设计",
+				"fileName": "设计",
+				"isFolder": "1",
+				"display": "2",
+				"page": {
+					"desc": {
+						"1": "设计desc1",
+						"2": "设计这里是描述2"
+					},
+					"child": [{
+							"num": "1",
+							"name": "初次洽谈",
+							"fileName": "初次洽谈",
+							"isFolder": "0",
+							"display": "1"
+						},
+						{
+							"num": "2",
+							"name": "现场测量",
+							"fileName": "现场测量",
+							"isFolder": "0",
+							"display": "2"
+						},
+						{
+							"num": "3",
+							"name": "概念方案",
+							"fileName": "概念方案",
+							"isFolder": "0",
+							"display": "3"
+						},
+						{
+							"num": "4",
+							"name": "二次到访",
+							"fileName": "二次到访",
+							"isFolder": "0",
+							"display": "4"
+						},
+						{
+							"num": "5",
+							"name": "深化方案",
+							"fileName": "深化方案",
+							"isFolder": "0",
+							"display": "5"
+						},
+						{
+							"num": "6",
+							"name": "图纸审核",
+							"fileName": "图纸审核",
+							"isFolder": "0",
+							"display": "6"
+						},
+						{
+							"num": "7",
+							"name": "报价审核",
+							"fileName": "报价审核",
+							"isFolder": "0",
+							"display": "7"
+						},
+						{
+							"num": "8",
+							"name": "三次到访",
+							"fileName": "三次到访",
+							"isFolder": "0",
+							"display": "8"
+						},
+						{
+							"num": "9",
+							"name": "软装家具",
+							"fileName": "软装家具",
+							"isFolder": "0",
+							"display": "9"
+						}
+					]
+				}
+			},
+			{
+				"name": "企业",
+				"fileName": "企业",
+				"isFolder": "1",
+				"display": "3",
+				"page": {
+					"desc": {
+						"1": "企业desc1",
+						"2": "企业这里是描述2"
+					},
+					"child": [{
+							"num": "1",
+							"name": "企业文化",
+							"fileName": "企业文化",
+							"isFolder": "0",
+							"display": "1"
+						},
+						{
+							"num": "2",
+							"name": "企业成绩",
+							"fileName": "企业成绩",
+							"isFolder": "0",
+							"display": "2"
+						}
+					]
+				}
+			}, {
+				"name": "售后",
+				"fileName": "售后",
+				"isFolder": "1",
+				"display": "4",
+				"page": {
+					"desc": {
+						"1": "售后desc1",
+						"2": "售后这里是描述2"
+					},
+					"child": [{
+							"num": "1",
+							"name": "质保",
+							"fileName": "质保",
+							"isFolder": "0",
+							"display": "1"
+						},
+						{
+							"num": "2",
+							"name": "维修",
+							"fileName": "维修",
+							"isFolder": "0",
+							"display": "2"
+						}
+					]
+				}
+			},
+			{
+				"name": "建材",
+				"fileName": "建材",
+				"isFolder": "1",
+				"display": "5",
+				"page": {
+					"desc": {
+						"1": "建材desc1",
+						"2": "建材这里是描述2"
+					},
+					"child": [{
+							"num": "1",
+							"name": "复尺测量",
+							"fileName": "复尺测量",
+							"isFolder": "0",
+							"display": "1"
+						},
+						{
+							"num": "2",
+							"name": "安装顺序及加工周期",
+							"fileName": "安装顺序及加工周期",
+							"isFolder": "0",
+							"display": "2"
+						},
+						{
+							"num": "3",
+							"name": "安装施工",
+							"fileName": "复尺测量",
+							"isFolder": "0",
+							"display": "3"
+						},
+						{
+							"num": "4",
+							"name": "项目验收",
+							"fileName": "项目验收",
+							"isFolder": "0",
+							"display": "4"
+						}
+					]
+				}
+			}
+		]
+	}
 }

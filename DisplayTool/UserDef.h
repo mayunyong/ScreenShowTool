@@ -9,6 +9,8 @@ const double c_dyBtnImgRadio  = 0.1666;
 const double c_dxSecondBtnImgRadio  = 0.22;
 const double c_dySecondBtnImgRadio  = 0.22;
 
+const bool c_bSetShowImgText= false;
+
 enum EN_PageType
 {
 	Page_Home = 0,

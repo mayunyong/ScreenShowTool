@@ -16,24 +16,26 @@
 #define SYS_CONFIG_DIRPATH_KEY  SYS_CONFIG_SYSTEM"/"SYS_CONFIG_DIRPATH
 
 //*********************************************************
-QPlayInfo::QPlayInfo() :playData(NULL)
+QPlayInfo::QPlayInfo() :playData(NULL),pParentInfo(NULL)
 {
 }
 
 QPlayInfo::QPlayInfo(const QPlayInfo &r)
 {
     displayName = r.displayName;
-    name = r.name;
-    parentName = r.parentName;
-    filePath = r.filePath;
-    dispalyID = r.dispalyID;
-    pageRoll = r.pageRoll;
-    isExist = r.isExist;
-    fileType = r.fileType;
+    displayNum  = r.displayNum;
+    name        = r.name;
+    parentName  = r.parentName;
+    filePath    = r.filePath;
+    dispalyID   = r.dispalyID;
+    pageRoll    = r.pageRoll;
+    isExist     = r.isExist;
+    fileType    = r.fileType;
+	pParentInfo = r.pParentInfo;
 
     if (r.playData)
     {
-        playData = new QPlayData;
+        playData  = new QPlayData;
         *playData = *r.playData;
     }
 };
@@ -49,14 +51,16 @@ QPlayInfo::~QPlayInfo()
 
 QPlayInfo & QPlayInfo::operator = (const QPlayInfo &r)
 {
+    displayNum  = r.displayNum;
     displayName = r.displayName;
-    name = r.name;
-    parentName = r.parentName;
-    filePath = r.filePath;
-    dispalyID = r.dispalyID;
-    pageRoll = r.pageRoll;
-    isExist = r.isExist;
-    fileType = r.fileType;
+    name        = r.name;
+    parentName  = r.parentName;
+    filePath    = r.filePath;
+    dispalyID   = r.dispalyID;
+    pageRoll    = r.pageRoll;
+    isExist     = r.isExist;
+    fileType    = r.fileType;
+	pParentInfo = r.pParentInfo;
 
     if (r.playData)
     {
@@ -70,13 +74,14 @@ QJsonObject QPlayInfo::ToJson()
 {
     QJsonObject Obj;
     Obj.insert("displayName", displayName);
-    Obj.insert("name", name);
-    Obj.insert("parentName", parentName);
-    Obj.insert("filePath", filePath);
-    Obj.insert("dispalyID", dispalyID);
-    Obj.insert("pageRoll", pageRoll);
-    Obj.insert("isExist", isExist);
-    Obj.insert("fileType", fileType);
+    Obj.insert("displayNum",  displayNum);
+    Obj.insert("name",        name);
+    Obj.insert("parentName",  parentName);
+    Obj.insert("filePath",    filePath);
+    Obj.insert("dispalyID",   dispalyID);
+    Obj.insert("pageRoll",    pageRoll);
+    Obj.insert("isExist",     isExist);
+    Obj.insert("fileType",    fileType);
 
     if (playData)
     {
@@ -280,11 +285,12 @@ bool CPlayData::ReadRuleData()
 //*********************************************************
 void CPlayData::GetJsonData(QPlayInfo &playInfo, QJsonObject &jsonObj, QString strParentName)
 {
-    playInfo.name = jsonObj.value("fileName").toString();
+    playInfo.name        = jsonObj.value("fileName").toString();
+    playInfo.displayNum  = jsonObj.value("num").toString();
     playInfo.displayName = jsonObj.value("name").toString();
-    playInfo.fileType = "1" == jsonObj.value("isFolder").toString() ? QPlayInfo::folder : QPlayInfo::file;
-    playInfo.parentName = strParentName;
-    playInfo.filePath = m_strFilePath + strParentName + "/" + playInfo.name;
+    playInfo.fileType    = "1" == jsonObj.value("isFolder").toString() ? QPlayInfo::folder : QPlayInfo::file;
+    playInfo.parentName  = strParentName;
+    playInfo.filePath    = m_strFilePath + strParentName + "/" + playInfo.name;
 
     // ÉèÖÃ¹ö¶¯Ò³
     QString strDisplay = jsonObj.value("display").toString();
@@ -342,6 +348,7 @@ void CPlayData::GetJsonData(QPlayInfo &playInfo, QJsonObject &jsonObj, QString s
         {
             QJsonObject child = children.at(i).toObject();
             QPlayInfo *childInfo = new QPlayInfo;
+			childInfo->pParentInfo = &playInfo;
             GetJsonData(*childInfo, child, strParentName + "/" + playInfo.name);
             childPlayData->children[childInfo->pageRoll].push_back(childInfo);
         }

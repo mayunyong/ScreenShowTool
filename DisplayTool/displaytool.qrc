@@ -32,5 +32,8 @@
         <file alias="HomeText3.png">Resources/HomeText/HomeText3.png</file>
         <file alias="HomeText4.png">Resources/HomeText/HomeText4.png</file>
         <file alias="HomeText5.png">Resources/HomeText/HomeText5.png</file>
+        <file alias="back.png">Resources/Second/back.png</file>
+        <file alias="next.png">Resources/Second/next.png</file>
+        <file alias="24_m_n.png">Resources/24_m_n.png</file>
     </qresource>
 </RCC>

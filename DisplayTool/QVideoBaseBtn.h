@@ -21,13 +21,18 @@ public:
 signals:
 	void SignalClkIndexBtn(const QPlayInfo* pStPlayDta);
 
+private slots: 
+	void SlotClickBtn();
+
+protected:
+	virtual void ShowPlayData();
+
 protected:
 	int m_iBtnIndex;
 	const QPlayInfo* m_pPlayData;
 	QString m_strSrcPath;
-
-private slots: 
-	void SlotClickBtn();
+	bool m_bAdjustSize;
+	bool m_bNeedSetText;
 };
 
 #endif // QVIDEOBASEBTN_H

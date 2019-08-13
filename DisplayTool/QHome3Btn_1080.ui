@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QHome3Btn_1080</class>
+ <widget class="QPushButton" name="QHome3Btn_1080">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>164</width>
+    <height>170</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QHome3Btn_1080</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background:transparent;
+background-image: url(:/DisplayTool/HomeText3.png);
+
+
+</string>
+  </property>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="displaytool.qrc"/>
+ </resources>
+ <connections/>
+</ui>

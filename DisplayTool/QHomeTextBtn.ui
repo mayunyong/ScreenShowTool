@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QHomeTextBtn</class>
+ <widget class="QPushButton" name="QHomeTextBtn">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>354</width>
+    <height>261</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QHomeTextBtn</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: transparent;
+color: #02e4fa;
+</string>
+  </property>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

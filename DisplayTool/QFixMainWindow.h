@@ -26,6 +26,7 @@ private:
 	QRect m_DeskRect;
 	//!²¥·ÅÊý¾Ý
 	CPlayData m_playDataObj;
+	QPlayInfo* m_pAllPlayInfo;
 	//QPlayData* m_pPlayData;
 };
 

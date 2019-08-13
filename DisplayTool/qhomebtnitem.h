@@ -17,7 +17,7 @@ public:
 	QHomeBtnItem(QWidget *parent = 0, QSize btnSize = QSize(1920,1080));
 	~QHomeBtnItem();
 
-	void setPlayData(int iBtnIndex,  const QPlayInfo* pStPlayDta);
+	void ShowPlayData();
 
 	void setUIInfo(EN_PageType m_ePageType, int iNum, bool bVideoFlag = false);
 
@@ -26,8 +26,8 @@ signals:
 
 private:
 	Ui::QHomeBtnItem ui;
-	int m_iBtnIndex;
-	const QPlayInfo* m_pPlayData;
+	//int m_iBtnIndex;
+//	const QPlayInfo* m_pPlayData;
 
 private slots: 
 	void SlotClickBtn();
