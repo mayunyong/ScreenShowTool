@@ -1,26 +1,25 @@
 [system]
-dirpath=E:/Code/TempCode/code/newCode/ScreenShowTool/DisplayTool
+dirpath=G:/Code/QtCode/ScreenShowTool/DisplayTool/\x89c6\x9891
 
 [HomePage]
-HomeBtn1 = 80, 140
-HomeBtn2 = 385, 60
-HomeBtn3 = 525, 210
-HomeBtn4 = 500, 500
-HomeBtn5 = 80, 540
+HomeBtn1=80, 140
+HomeBtn2=385, 60
+HomeBtn3=525, 210
+HomeBtn4=500, 500
+HomeBtn5=80, 540
 
 [SecondPage]
-SecondBtn1 = 80, 207
-SecondBtn2 = 310, 129
-SecondBtn3 = 550, 219
-SecondBtn4 = 757, 132
-SecondBtn5 = 1020, 202
-SecondBtn6 = 75, 460
-SecondBtn7 = 353, 420
-SecondBtn8 = 656, 435
-SecondBtn9 = 975, 478
-
-SecondLabel_1 = 290, 330
-SecondLabel_2 = 740, 332
-SecondLabel_3 = 105, 620
-SecondLabel_4 = 476, 620
-SecondLabel_5 = 851, 640
+SecondBtn1=80, 207
+SecondBtn2=310, 129
+SecondBtn3=550, 219
+SecondBtn4=757, 132
+SecondBtn5=1020, 202
+SecondBtn6=75, 460
+SecondBtn7=353, 420
+SecondBtn8=656, 435
+SecondBtn9=975, 478
+SecondLabel_1=290, 330
+SecondLabel_2=740, 332
+SecondLabel_3=105, 620
+SecondLabel_4=476, 620
+SecondLabel_5=851, 640

@@ -67,7 +67,7 @@ void QPlayer::PlayVideo(const QString& strVideoPath)
 				}
 			}
 
-			showMaximized();
+			showFullScreen();
 			this->setGeometry(desktop->screenGeometry(iNum)); 
 		}
 	}

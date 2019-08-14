@@ -6,6 +6,7 @@
 #include "QRect"
 #include "PlayData.h"
 #include "QPlayer.h"
+#include <QFileDialog>
 
 class QFixMainWindow : public QMainWindow
 {
@@ -21,13 +22,15 @@ public:
 private slots:
 	//!点击某个指定按钮
 	void SlotClkIndexBtn(const QPlayInfo* pStPlayDta);
+	void SlotConfigPath();
 
 private:
 	Ui::QFixMainWindow ui;
 	QRect m_DeskRect;
 	//!播放数据
-	CPlayData m_playDataObj;
+	CPlayData* m_pPlayDataObj;
 	QPlayInfo* m_pAllPlayInfo;
+	QFileDialog *m_pFileDlg;
 	//QPlayData* m_pPlayData;
 	//！播放器
 	QPlayer* m_pPlayer;

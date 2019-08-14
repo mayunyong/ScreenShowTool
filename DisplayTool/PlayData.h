@@ -62,9 +62,9 @@ public:
 public:
     bool InitiaData(QString strPath = "");              // 初始化数据
     //bool SetFilePath(const QString &strPath);           // 设置文件绝对路径
-    //QString GetFilePath();                              // 获取文件绝对路径
+	QString GetFilePath(){ return m_strFilePath; };                              // 获取文件绝对路径
     QPlayData * GetData() { return &m_PlayData; }
-	QPlayData * GetRootData() { return &m_PlayData; }
+	//QPlayData * GetRootData() { return &m_PlayData; }
 private:
     bool ReadSysData(const QString &strFilePath);       // 读取系统配置，获取顶级路径
     bool ReadRuleData();                                // 读取规则配置

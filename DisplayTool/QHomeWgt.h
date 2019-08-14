@@ -21,6 +21,10 @@ private:
 	void InitAllButton();
 
 	//void AddNewBtn(double wPercent,double hPercent);
+signals:
+	void SignalClose();
+	void SignalSet();
+
 private:
 	Ui::QHomeWgt ui;
 

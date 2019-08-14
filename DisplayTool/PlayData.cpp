@@ -9,7 +9,7 @@
 #include <QJsonArray>
 #include <QDir>
 
-#define RLUE_CONFIG         "./ruleConf"
+#define RLUE_CONFIG         "/ruleConf"
 #define SYS_CONFIG          "./sysConf"
 #define SYS_CONFIG_SYSTEM   "system"
 #define SYS_CONFIG_DIRPATH  "dirpath"
@@ -194,26 +194,60 @@ bool CPlayData::ReadSysData(const QString &strFilePath)
     {
         return true;
     }
+
+	QString strVideoDir = strFilePath;
+	if (strFilePath.isEmpty())
+	{
+		//m_strFilePath = QCoreApplication::applicationDirPath();
+		strVideoDir = QDir::currentPath() + QStringLiteral("/视频");
+	}
+
+	// 根据ini文件路径新建QSettings类
+	QSettings iniFile(SYS_CONFIG, QSettings::IniFormat);
+	iniFile.setIniCodec("UTF-8");
+	QString strValue = iniFile.value(SYS_CONFIG_DIRPATH_KEY).toString();
+	if (strValue.isEmpty() || 
+		(!strFilePath.isEmpty()&&
+		  0 != strValue.compare(strVideoDir)
+		 )
+		)
+	{
+		iniFile.beginGroup(SYS_CONFIG_SYSTEM);                    // 设置当前节名，代表以下的操作都是在这个节中
+		iniFile.setValue(SYS_CONFIG_DIRPATH, strVideoDir);      // 因为上面设置了节了，这里不在需要把节名写上去
+		iniFile.endGroup();                                       // 结束当前节的操作
+		iniFile.sync();
+
+		m_strFilePath = strVideoDir;
+	}
+	else
+	{
+		m_strFilePath = strValue;
+	}
+
+	return true;
+
     //获取程序当前运行目录
+
     if (m_strFilePath.isEmpty())
     {
         //m_strFilePath = QCoreApplication::applicationDirPath();
-        m_strFilePath = QDir::currentPath();
+        m_strFilePath = QDir::currentPath() + QStringLiteral("/视频");
     }
+	
     // 根据ini文件路径新建QSettings类
-    QSettings iniFile(SYS_CONFIG, QSettings::IniFormat);
-    QString strValue = iniFile.value(SYS_CONFIG_DIRPATH_KEY).toString();
-    if (strValue.isEmpty())
+    QSettings iniSysFile(SYS_CONFIG, QSettings::IniFormat);
+    QString strPathValue = iniSysFile.value(SYS_CONFIG_DIRPATH_KEY).toString();
+    if (strPathValue.isEmpty() )
     {
-        iniFile.beginGroup(SYS_CONFIG_SYSTEM);                    // 设置当前节名，代表以下的操作都是在这个节中
-        iniFile.setValue(SYS_CONFIG_DIRPATH, m_strFilePath);      // 因为上面设置了节了，这里不在需要把节名写上去
-        iniFile.endGroup();                                       // 结束当前节的操作
-        iniFile.sync();
+        iniSysFile.beginGroup(SYS_CONFIG_SYSTEM);                    // 设置当前节名，代表以下的操作都是在这个节中
+        iniSysFile.setValue(SYS_CONFIG_DIRPATH, m_strFilePath);      // 因为上面设置了节了，这里不在需要把节名写上去
+        iniSysFile.endGroup();                                       // 结束当前节的操作
+        iniSysFile.sync();
     }
-    else
-    {
-        m_strFilePath = strValue;
-    }
+	 else
+	{
+	m_strFilePath = strPathValue;
+	}
     return true;
 }
 
@@ -226,11 +260,11 @@ bool CPlayData::ReadSysData(const QString &strFilePath)
 //*********************************************************
 bool CPlayData::ReadRuleData()
 {
-    if (m_bInitData)
+   /* if (m_bInitData)
     {
         return true;
-    }
-    QFile loadFile(RLUE_CONFIG);
+    }*/
+    QFile loadFile(m_strFilePath + RLUE_CONFIG);
 
     if (!loadFile.open(QIODevice::ReadOnly))
     {

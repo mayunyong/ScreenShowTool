@@ -29,7 +29,8 @@ QHomeWgt::QHomeWgt(QWidget *parent)
 	AddNewBtn(new QHome5Btn_1080(this),posMap.contains(5)? posMap[5]: QPoint(130, 720));
 
 	connect(ui.toolButton_3, SIGNAL(clicked()), this, SIGNAL(SignalMin()));
-	
+	connect(ui.tBtn_Close, SIGNAL(clicked()), this, SIGNAL(SignalClose()));
+	connect(ui.tBtn_Set, SIGNAL(clicked()), this, SIGNAL(SignalSet()));
 }
 
 QHomeWgt::~QHomeWgt()
