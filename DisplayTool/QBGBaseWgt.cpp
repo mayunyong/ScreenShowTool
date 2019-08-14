@@ -113,12 +113,22 @@ void QBGBaseWgt::AddNewBtn(QVideoBaseBtn* pBtn, QPoint pPos)
 	pBtn->move(pPos);
 }
 
+void QBGBaseWgt::AddNewLabel(QLabel* pLabel, QPoint pPos)
+{
+	//！记录btn
+	int iNum = m_tipLabelMap.size()+1;
+	m_tipLabelMap[iNum] = pLabel;
+
+	pLabel->move(pPos);
+}
+
 void QBGBaseWgt::ShowPage(int iPage /*= 0*/)
 {
 	if(m_pPlayInfo &&
 		m_pPlayInfo->playData 
 		&& m_pPlayInfo->playData->children.contains(iPage))
 	{
+		//!按钮控制
 		foreach(QVideoBaseBtn* pBtn, m_VideoBtnMap)
 		{
 			if(pBtn)
@@ -138,8 +148,31 @@ void QBGBaseWgt::ShowPage(int iPage /*= 0*/)
 			}
 		}
 
+		//!文字提示显示
+		if (Page_Second == m_ePageType)
+		{
+			//!按钮控制
+			foreach(QLabel* pLabel, m_tipLabelMap)
+			{
+				if(pLabel)
+				{
+					pLabel->hide();
+				}
+			}
+
+	  
+			const QMap<int, QString> & mapPlayInfo = m_pPlayInfo->playData->descInfo;
+			QMap<int, QString>::const_iterator beginItr = mapPlayInfo.constBegin();
+			for (; beginItr !=mapPlayInfo.constEnd(); beginItr++)
+			{
+				const int& iNum = beginItr.key();
+				if(m_tipLabelMap.contains(iNum) && m_tipLabelMap[iNum])
+				{
+					m_tipLabelMap[iNum]->setText(beginItr.value());
+					m_tipLabelMap[iNum]->show();
+				}
+			}
+		}
 		 m_iCurPage = iPage;
 	}
-
-
 }

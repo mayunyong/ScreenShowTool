@@ -21,6 +21,7 @@ signals:
 
 	//void SignVideoSliderMove(int);
 	//void SignVideoSliderCLk(int);
+	void SignalVideoPlayFinish();
 
 	public slots:
 		//£¡Î»ÖÃ¸Ä±ä

@@ -1,4 +1,5 @@
 #include "QVideoBaseBtn.h"
+#include <QSound>
 
 QVideoBaseBtn::QVideoBaseBtn(QWidget *parent)
 	: QPushButton(parent)
@@ -45,6 +46,8 @@ void QVideoBaseBtn::setUIInfo(EN_PageType m_ePageType, int iNum, bool bVideoFlag
 
 void QVideoBaseBtn::SlotClickBtn()
 {
+	QSound::play(":/DisplayTool/2.wav");
+	
 	if(m_iBtnIndex > -1 && 
 		m_pPlayData //&& 
 		////m_pPlayData->playData/*&&

@@ -4,6 +4,7 @@
 #include "QHome3Btn_1080.h"
 #include "QHome4Btn_1080.h"
 #include "QHome5Btn_1080.h"
+#include "QGlobalSystemConfig.h"
 
 QHomeWgt::QHomeWgt(QWidget *parent)
 	: QBGBaseWgt(parent)
@@ -11,13 +12,21 @@ QHomeWgt::QHomeWgt(QWidget *parent)
 	ui.setupUi(this);
 	//InitHomeButton();
 	m_ePageType = Page_Home;
-	m_pBackGroundixmap= new QPixmap(":/DisplayTool/HomePage.png");
+	QString strValue = ":/DisplayTool/HomePage.png";
+	if(c_bIs1280)
+	{
+		strValue = ":/DisplayTool_1280/HomePage.png";
+	}
+	
+	m_pBackGroundixmap= new QPixmap(strValue);
 
-	AddNewBtn(new QHome1Btn_1080(this), QPoint(105, 210));
-	AddNewBtn(new QHome2Btn_1080(this), QPoint(448, 62));
-	AddNewBtn(new QHome3Btn_1080(this), QPoint(836, 255));
-	AddNewBtn(new QHome4Btn_1080(this), QPoint(714, 610));
-	AddNewBtn(new QHome5Btn_1080(this), QPoint(130, 720));
+	QMap<int, QPoint> posMap = QGlobalSystemConfig::Instance()->GetHomeBtnPosMap();
+
+	AddNewBtn(new QHome1Btn_1080(this), posMap.contains(1)? posMap[1]:QPoint(105, 210));
+	AddNewBtn(new QHome2Btn_1080(this), posMap.contains(2)? posMap[2]:QPoint(448, 62));
+	AddNewBtn(new QHome3Btn_1080(this), posMap.contains(3)? posMap[3]:QPoint(836, 255));
+	AddNewBtn(new QHome4Btn_1080(this), posMap.contains(4)? posMap[4]:QPoint(714, 610));
+	AddNewBtn(new QHome5Btn_1080(this),posMap.contains(5)? posMap[5]: QPoint(130, 720));
 
 	connect(ui.toolButton_3, SIGNAL(clicked()), this, SIGNAL(SignalMin()));
 	

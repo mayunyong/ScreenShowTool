@@ -19,7 +19,7 @@ public:
 
 public:
 	//！播放指定目录视频
-	void PlayVideo(QString& strVideoPath);
+	void PlayVideo(const QString& strVideoPath);
 
 private:
 	Ui::QPlayer ui;

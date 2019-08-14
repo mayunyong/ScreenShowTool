@@ -1,0 +1,26 @@
+[system]
+dirpath=E:/Code/TempCode/code/newCode/ScreenShowTool/DisplayTool
+
+[HomePage_1920]
+HomeBtn1 = 105, 210
+HomeBtn2 = 448, 62
+HomeBtn3 = 736, 255
+HomeBtn4 = 714, 610
+HomeBtn5 = 130, 720
+
+[SecondPage_1920]
+SecondBtn1 = 86, 287
+SecondBtn2 = 443, 159
+SecondBtn3 = 811, 261
+SecondBtn4 = 1089, 181
+SecondBtn5 = 1436, 279
+SecondBtn6 = 86, 647
+SecondBtn7 = 497, 607
+SecondBtn8 = 975, 611
+SecondBtn9 = 1409, 639
+
+SecondLabel_1 = 411, 451
+SecondLabel_2 = 1112, 456
+SecondLabel_3 = 156, 896
+SecondLabel_4 = 717, 897
+SecondLabel_5 = 1277, 897

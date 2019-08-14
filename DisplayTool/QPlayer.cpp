@@ -25,6 +25,7 @@ QPlayer::QPlayer(QWidget *parent)
 	m_pHeaderWgt->hide();
 
 	connect(m_pHeaderWgt, SIGNAL(SignCloseWdgt()), this, SLOT(close()));
+	connect(m_pContorlWgt, SIGNAL(SignalVideoPlayFinish()), this, SLOT(close()));
 	//connect(m_pPlayer, SIGNAL(error(QMediaPlayer::Error)), this, SLOT(handleError()));
 }
 
@@ -34,7 +35,7 @@ QPlayer::~QPlayer()
 }
 
 //！播放视频
-void QPlayer::PlayVideo(QString& strVideoPath)
+void QPlayer::PlayVideo(const QString& strVideoPath)
 {
 	if(!QFileInfo::exists(strVideoPath)
 		|| !m_pContorlWgt
@@ -75,25 +76,25 @@ void QPlayer::PlayVideo(QString& strVideoPath)
 //鼠标移动事件
 void QPlayer::mouseMoveEvent(QMouseEvent *ev)
 {
-	if(m_pContorlWgt && m_pHeaderWgt)
+	if(m_pContorlWgt /*&& m_pHeaderWgt*/)
 	{
 		int iheight = height();
 		QPoint posPnt =  ev->pos();
 		int iPosY = posPnt.y();
-		if((iPosY >0 && iPosY<40 ))
-		{	
-			if(m_pHeaderWgt->isHidden())
-			{
-				m_pHeaderWgt->setFixedWidth(width());
-				m_pHeaderWgt->show();
-			}
-
-			if(!m_pContorlWgt->isHidden() && m_pPlayer->state() == QMediaPlayer::PlayingState)
-			{
-				m_pContorlWgt->hide();
-			}
-		}
-		else if(iPosY > iheight-50 && iPosY < iheight)
+//		if((iPosY >0 && iPosY<40 ))
+//		{	
+//			/*if(m_pHeaderWgt->isHidden())
+//			{
+//				m_pHeaderWgt->setFixedWidth(width());
+//				m_pHeaderWgt->show();
+//			}
+//*/
+//			if(!m_pContorlWgt->isHidden() && m_pPlayer->state() == QMediaPlayer::PlayingState)
+//			{
+//				m_pContorlWgt->hide();
+//			}
+//		}
+		if(iPosY > iheight-50 && iPosY < iheight)
 		{
 			if(m_pContorlWgt->isHidden())
 			{
@@ -102,17 +103,17 @@ void QPlayer::mouseMoveEvent(QMouseEvent *ev)
 				m_pContorlWgt->show();
 			}
 
-			if(!m_pHeaderWgt->isHidden()&& m_pPlayer->state() == QMediaPlayer::PlayingState)
+		/*	if(!m_pHeaderWgt->isHidden()&& m_pPlayer->state() == QMediaPlayer::PlayingState)
 			{
 				m_pHeaderWgt->hide();
-			}
+			}*/
 		}
 		else
 		{
-			if(!m_pHeaderWgt->isHidden()&& m_pPlayer->state() == QMediaPlayer::PlayingState)
+			/*if(!m_pHeaderWgt->isHidden()&& m_pPlayer->state() == QMediaPlayer::PlayingState)
 			{
 				m_pHeaderWgt->hide();
-			}
+			}*/
 			if(!m_pContorlWgt->isHidden()&& m_pPlayer->state() == QMediaPlayer::PlayingState)
 			{
 				m_pContorlWgt->hide();

@@ -1,4 +1,5 @@
 #pragma  once
+#define SCRENN_1280_800
 
 const int c_iBGImgWidth = 1920;
 const int c_iBGImgHeight = 1080;
@@ -16,3 +17,5 @@ enum EN_PageType
 	Page_Home = 0,
 	Page_Second,
 };
+
+const bool c_bIs1280 = true;

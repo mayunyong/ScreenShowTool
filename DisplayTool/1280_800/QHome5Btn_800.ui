@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QHome5Btn_800</class>
+ <widget class="QPushButton" name="QHome5Btn_1080">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>138</width>
+    <height>106</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QHome5Btn_800</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background:transparent;
+background-image: url(:/DisplayTool_1280/HomeText5.png);</string>
+  </property>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="../displaytool_1280.qrc"/>
+ </resources>
+ <connections/>
+</ui>

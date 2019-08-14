@@ -68,7 +68,15 @@ void QControlWidgt:: mediaStateChanged(QMediaPlayer::State ePlayState)
 {
 	switch(ePlayState) {
 	case QMediaPlayer::PlayingState:
-		ui.playButton->setIcon(style()->standardIcon(QStyle::SP_MediaPause));
+		{
+			ui.playButton->setIcon(style()->standardIcon(QStyle::SP_MediaPause));
+		}
+		break;
+	case QMediaPlayer::StoppedState:
+		{
+			ui.playButton->setIcon(style()->standardIcon(QStyle::SP_MediaPlay));
+			emit SignalVideoPlayFinish();
+		}
 		break;
 	default:
 		ui.playButton->setIcon(style()->standardIcon(QStyle::SP_MediaPlay));

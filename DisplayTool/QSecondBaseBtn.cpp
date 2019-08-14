@@ -34,11 +34,11 @@ void QSecondBaseBtn::ShowPlayData()
 	}
 	if(QPlayInfo::file == m_pPlayData->fileType)
 	{
-		m_pNameLabel->setStyleSheet(QStringLiteral("background:transparent;color: white;font: 24px \"Î¢ÈíÑÅºÚ\";"));
+		m_pNameLabel->setStyleSheet(QStringLiteral("background:transparent;color: white;font: 15px \"Î¢ÈíÑÅºÚ\";"));
 	}
 	else
 	{
-		m_pNameLabel->setStyleSheet(QStringLiteral("background:transparent;color: #02e4fa;font: 24px \"Î¢ÈíÑÅºÚ\";"));
+		m_pNameLabel->setStyleSheet(QStringLiteral("background:transparent;color: #02e4fa;font: 15px \"Î¢ÈíÑÅºÚ\";"));
 	}
 	show();
 }

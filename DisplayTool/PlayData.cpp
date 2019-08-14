@@ -320,7 +320,7 @@ void CPlayData::GetJsonData(QPlayInfo &playInfo, QJsonObject &jsonObj, QString s
         nameFilters.push_back(playInfo.name + ".mp4");  // 文件类型过滤
         nameFilters.push_back(playInfo.name + ".avi");  // 文件类型过滤
         QFileInfoList files = dir.entryInfoList(nameFilters, QDir::Files | QDir::Readable, QDir::Name);
-        files = dir.entryInfoList();
+       //files = dir.entryInfoList();
         for (int i = 0; i < files.size(); i++)
         {
             QFileInfo fileInfo = files.at(i);

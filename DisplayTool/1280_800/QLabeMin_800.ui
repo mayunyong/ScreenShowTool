@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QLabeMin_800</class>
+ <widget class="QLabel" name="QLabeMin_800">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>240</width>
+    <height>88</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QLabeMin_800</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background:transparent;
+background-image: url(:/DisplayTool_1280/minLabel.png);
+font: 15px &quot;微软雅黑&quot;;
+color: rgb(2, 228, 250);</string>
+  </property>
+  <property name="text">
+   <string>呜呜呜呜呜呜呜呜无无</string>
+  </property>
+  <property name="scaledContents">
+   <bool>false</bool>
+  </property>
+  <property name="alignment">
+   <set>Qt::AlignCenter</set>
+  </property>
+  <property name="wordWrap">
+   <bool>true</bool>
+  </property>
+  <property name="margin">
+   <number>10</number>
+  </property>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="../DisplayTool_1280.qrc"/>
+ </resources>
+ <connections/>
+</ui>

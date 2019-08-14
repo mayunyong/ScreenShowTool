@@ -6,6 +6,7 @@
 
 QFixMainWindow::QFixMainWindow(QWidget *parent)
 	: QMainWindow(parent)
+	,m_pPlayer(NULL)
 {
 	ui.setupUi(this);
 	
@@ -23,6 +24,7 @@ QFixMainWindow::QFixMainWindow(QWidget *parent)
 	connect(ui.page_2, SIGNAL(SignalClkIndexBtn(const QPlayInfo*)), this, SLOT(SlotClkIndexBtn(const QPlayInfo*)));
 	connect(ui.page, SIGNAL(SignalMin()), this, SLOT(showMinimized()));
 	connect(ui.page_2, SIGNAL(SignalMin()), this, SLOT(showMinimized()));
+	m_pPlayer = new QPlayer();
 	
 }
 
@@ -34,12 +36,16 @@ QFixMainWindow::~QFixMainWindow()
 		delete m_pAllPlayInfo;
 		m_pAllPlayInfo = NULL;
 	}
+	if(m_pPlayer)
+	{
+		m_pPlayer->deleteLater();
+	}
 }
 
 void QFixMainWindow::ShowHomePage()
 {
-	show();
-	//m_DeskRect = QRect(100,200,1600, 900);
+	showFullScreen();
+	//m_DeskRect = QRect(10,200,1280, 800);
 
 	this->setGeometry(m_DeskRect); 
 	ui.page->InitUIInfo(m_DeskRect, m_pAllPlayInfo);
@@ -64,8 +70,8 @@ void QFixMainWindow::SlotClkIndexBtn(const QPlayInfo* pStPlayDta)
 		{
 			if(QFileInfo::exists(pStPlayDta->filePath) && QFileInfo(pStPlayDta->filePath).isFile())
 			{
-				/*pStPlayDta->isExist()*/
-				//QMessageBox::warning(this, QStringLiteral("提示"), pStPlayDta->filePath, QMessageBox::Yes );
+				//!视频播放
+				m_pPlayer->PlayVideo(pStPlayDta->filePath);
 			}
 			else
 			{

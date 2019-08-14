@@ -24,7 +24,9 @@ public:
 protected:
 	void resizeEvent(QResizeEvent * event);
 	void paintEvent(QPaintEvent *event);
+
 	void AddNewBtn(QVideoBaseBtn* pBtn, QPoint pPos);
+	void AddNewLabel(QLabel* pBtn, QPoint pPos);
 	//!添加按钮
 	void AddNewBtn(QPoint pPos);
 
@@ -44,6 +46,7 @@ protected:
 
 	//!按钮map
 	QMap<int, QVideoBaseBtn*> m_VideoBtnMap;
+	QMap<int, QLabel*> m_tipLabelMap;
 	//!背景label
 	QLabel* m_pBGLabel;
 	//!页面类型

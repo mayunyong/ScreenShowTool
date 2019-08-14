@@ -45,8 +45,11 @@
     <Filter Include="1080_800">
       <UniqueIdentifier>{d8366af5-60a2-4258-95bb-3bdfce39ecf7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Form Files\1080_800">
+    <Filter Include="Form Files\1920_1080">
       <UniqueIdentifier>{90dd5357-c199-4d1e-bc56-59c8b7f7ee39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form Files\1280_800">
+      <UniqueIdentifier>{c54f7868-5a0e-4308-bc5d-47854d84022b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -329,6 +332,45 @@
     <ClCompile Include="QSecondBtn8_1080.cpp">
       <Filter>1080_800</Filter>
     </ClCompile>
+    <ClCompile Include="QGlobalSystemConfig.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QGlobalSystemConfig.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QGlobalSystemConfig.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QLabeMin_1920.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QLabeMin_1920.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QLabeMax_1920.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QLabeMax_1920.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="qsingleapplication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qsingleapplication.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qsingleapplication.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_displaytool_1280.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QLabeMin_1920.cpp">
+      <Filter>1080_800</Filter>
+    </ClCompile>
+    <ClCompile Include="QLabeMax_1920.cpp">
+      <Filter>1080_800</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="displaytool.h">
@@ -425,19 +467,19 @@
       <Filter>1080_800</Filter>
     </CustomBuild>
     <CustomBuild Include="QHome1Btn_1080.ui">
-      <Filter>Form Files\1080_800</Filter>
+      <Filter>Form Files\1920_1080</Filter>
     </CustomBuild>
     <CustomBuild Include="QHome5Btn_1080.ui">
-      <Filter>Form Files\1080_800</Filter>
+      <Filter>Form Files\1920_1080</Filter>
     </CustomBuild>
     <CustomBuild Include="QHome2Btn_1080.ui">
-      <Filter>Form Files\1080_800</Filter>
+      <Filter>Form Files\1920_1080</Filter>
     </CustomBuild>
     <CustomBuild Include="QHome3Btn_1080.ui">
-      <Filter>Form Files\1080_800</Filter>
+      <Filter>Form Files\1920_1080</Filter>
     </CustomBuild>
     <CustomBuild Include="QHome4Btn_1080.ui">
-      <Filter>Form Files\1080_800</Filter>
+      <Filter>Form Files\1920_1080</Filter>
     </CustomBuild>
     <CustomBuild Include="QHomeTextBtn.h">
       <Filter>Header Files</Filter>
@@ -445,62 +487,131 @@
     <CustomBuild Include="QHomeTextBtn.ui">
       <Filter>Form Files</Filter>
     </CustomBuild>
-    <CustomBuild Include="QSecondBtn1_1080.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="QSecondBtn2_1080.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="QSecondBtn3_1080.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="QSecondBtn4_1080.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="QSecondBtn5_1080.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="QSecondBtn6_1080.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="qsecondbtn7_1080.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="QSecondBtn8_1080.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="QSecondBtn9_1080.h">
-      <Filter>Header Files</Filter>
-    </CustomBuild>
     <CustomBuild Include="QSecondBtn1_1080.ui">
-      <Filter>Form Files\1080_800</Filter>
+      <Filter>Form Files\1920_1080</Filter>
     </CustomBuild>
     <CustomBuild Include="QSecondBtn9_1080.ui">
-      <Filter>Form Files\1080_800</Filter>
+      <Filter>Form Files\1920_1080</Filter>
     </CustomBuild>
     <CustomBuild Include="QSecondBtn2_1080.ui">
-      <Filter>Form Files\1080_800</Filter>
+      <Filter>Form Files\1920_1080</Filter>
     </CustomBuild>
     <CustomBuild Include="QSecondBtn3_1080.ui">
-      <Filter>Form Files\1080_800</Filter>
+      <Filter>Form Files\1920_1080</Filter>
     </CustomBuild>
     <CustomBuild Include="QSecondBtn4_1080.ui">
-      <Filter>Form Files\1080_800</Filter>
+      <Filter>Form Files\1920_1080</Filter>
     </CustomBuild>
     <CustomBuild Include="QSecondBtn5_1080.ui">
-      <Filter>Form Files\1080_800</Filter>
+      <Filter>Form Files\1920_1080</Filter>
     </CustomBuild>
     <CustomBuild Include="QSecondBtn6_1080.ui">
-      <Filter>Form Files\1080_800</Filter>
+      <Filter>Form Files\1920_1080</Filter>
     </CustomBuild>
     <CustomBuild Include="qsecondbtn7_1080.ui">
-      <Filter>Form Files\1080_800</Filter>
+      <Filter>Form Files\1920_1080</Filter>
     </CustomBuild>
     <CustomBuild Include="QSecondBtn8_1080.ui">
-      <Filter>Form Files\1080_800</Filter>
+      <Filter>Form Files\1920_1080</Filter>
     </CustomBuild>
     <CustomBuild Include="QSecondBaseBtn.h">
       <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QGlobalSystemConfig.h">
+      <Filter>Data</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QLabeMin_1920.ui">
+      <Filter>Form Files\1920_1080</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QLabeMax_1920.ui">
+      <Filter>Form Files\1920_1080</Filter>
+    </CustomBuild>
+    <CustomBuild Include="qsingleapplication.h">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="displaytool_1280.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="1280_800\QHome1Btn_800.ui">
+      <Filter>Form Files\1280_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="1280_800\QHome2Btn_800.ui">
+      <Filter>Form Files\1280_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="1280_800\QHome3Btn_800.ui">
+      <Filter>Form Files\1280_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="1280_800\QHome4Btn_800.ui">
+      <Filter>Form Files\1280_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="1280_800\QHome5Btn_800.ui">
+      <Filter>Form Files\1280_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="1280_800\QLabeMax_800.ui">
+      <Filter>Form Files\1280_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="1280_800\QLabeMin_800.ui">
+      <Filter>Form Files\1280_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="1280_800\QSecondBtn1_800.ui">
+      <Filter>Form Files\1280_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="1280_800\QSecondBtn2_800.ui">
+      <Filter>Form Files\1280_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="1280_800\QSecondBtn3_800.ui">
+      <Filter>Form Files\1280_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="1280_800\QSecondBtn4_800.ui">
+      <Filter>Form Files\1280_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="1280_800\QSecondBtn5_800.ui">
+      <Filter>Form Files\1280_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="1280_800\QSecondBtn6_800.ui">
+      <Filter>Form Files\1280_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="1280_800\qsecondbtn7_800.ui">
+      <Filter>Form Files\1280_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="1280_800\QSecondBtn8_800.ui">
+      <Filter>Form Files\1280_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="1280_800\QSecondBtn9_800.ui">
+      <Filter>Form Files\1280_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QSecondBtn1_1080.h">
+      <Filter>1080_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QSecondBtn9_1080.h">
+      <Filter>1080_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QSecondBtn2_1080.h">
+      <Filter>1080_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QSecondBtn3_1080.h">
+      <Filter>1080_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QSecondBtn4_1080.h">
+      <Filter>1080_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QSecondBtn5_1080.h">
+      <Filter>1080_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QSecondBtn6_1080.h">
+      <Filter>1080_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="qsecondbtn7_1080.h">
+      <Filter>1080_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QSecondBtn8_1080.h">
+      <Filter>1080_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QLabeMin_1920.h">
+      <Filter>1080_800</Filter>
+    </CustomBuild>
+    <CustomBuild Include="QLabeMax_1920.h">
+      <Filter>1080_800</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
@@ -588,5 +699,69 @@
     <ClInclude Include="GeneratedFiles\ui_QSecondBtn9_1080.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_QLabeMin_1920.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_QLabeMax_1920.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_QHome1Btn_800.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_QHome2Btn_800.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_QHome3Btn_800.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_QHome4Btn_800.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_QHome5Btn_800.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_QLabeMax_800.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_QLabeMin_800.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_QSecondBtn1_800.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_QSecondBtn2_800.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_QSecondBtn3_800.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_QSecondBtn4_800.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_QSecondBtn5_800.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_QSecondBtn6_800.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_qsecondbtn7_800.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_QSecondBtn8_800.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_QSecondBtn9_800.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DisplayTool.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home\home4.png" />
+    <None Include="Resources\bitbug_favicon.ico" />
   </ItemGroup>
 </Project>

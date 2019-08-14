@@ -5,6 +5,7 @@
 #include "ui_QFixMainWindow.h"
 #include "QRect"
 #include "PlayData.h"
+#include "QPlayer.h"
 
 class QFixMainWindow : public QMainWindow
 {
@@ -28,6 +29,8 @@ private:
 	CPlayData m_playDataObj;
 	QPlayInfo* m_pAllPlayInfo;
 	//QPlayData* m_pPlayData;
+	//£¡²¥·ÅÆ÷
+	QPlayer* m_pPlayer;
 };
 
 #endif // QFIXMAINWINDOW_H
