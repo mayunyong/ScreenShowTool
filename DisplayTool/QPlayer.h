@@ -22,8 +22,8 @@ public:
 	void PlayVideo(const QString& strVideoPath);
 
 private slots:
-		void SlotPlaying();
-		void SlotMediaStatus(QMediaPlayer::MediaStatus estatus);
+		//void SlotPlaying();
+		//void SlotMediaStatus(QMediaPlayer::MediaStatus estatus);
 		void SlotShowWgt(bool);
 private:
 	Ui::QPlayer ui;

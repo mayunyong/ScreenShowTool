@@ -40,7 +40,7 @@ void QHomeBtnItem::ShowPlayData()
 void QHomeBtnItem::setUIInfo(EN_PageType ePageType, int iNum, bool bVideoFlag)
 {
 	//!…Ë÷√
-	QVideoBaseBtn::setUIInfo(ePageType, iNum, bVideoFlag);
+	//QVideoBaseBtn::setUIInfo(ePageType, iNum, bVideoFlag);
 	Qt::AspectRatioMode eRatioMode = Qt::KeepAspectRatio;
 	QPixmap * pPixMap= new QPixmap(m_strSrcPath);
 
