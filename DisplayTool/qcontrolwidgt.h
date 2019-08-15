@@ -17,13 +17,9 @@ private:
 	Ui::QControlWidgt ui;
 
 signals:
-	//void SignalVolumeBtn();
-
-	//void SignVideoSliderMove(int);
-	//void SignVideoSliderCLk(int);
 	void SignalVideoPlayFinish();
 
-	public slots:
+public slots:
 		//！位置改变
 		void positionChanged(qint64 iPos);
 		//！时长改变

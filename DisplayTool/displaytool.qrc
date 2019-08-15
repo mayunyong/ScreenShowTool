@@ -39,6 +39,6 @@
         <file alias="2.wav">Resources/2.wav</file>
         <file alias="maxLabel.png">Resources/Second/maxLabel.png</file>
         <file alias="minLabel.png">Resources/Second/minLabel.png</file>
-        <file>Resources/set.jpg</file>
+        <file alias="set.png">Resources/set.png</file>
     </qresource>
 </RCC>

@@ -13,10 +13,11 @@ QHomeWgt::QHomeWgt(QWidget *parent)
 	//InitHomeButton();
 	m_ePageType = Page_Home;
 	QString strValue = ":/DisplayTool/HomePage.png";
-	if(c_bIs1280)
-	{
+
+	#ifdef SCRENN_1280_800
 		strValue = ":/DisplayTool_1280/HomePage.png";
-	}
+	#endif // _DEBUG
+
 	
 	m_pBackGroundixmap= new QPixmap(strValue);
 

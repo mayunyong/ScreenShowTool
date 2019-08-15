@@ -13,6 +13,7 @@ public:
 	~QSecondBaseBtn();
 
 protected:
+	//!显示视频信息
 	void ShowPlayData();
 
 protected:

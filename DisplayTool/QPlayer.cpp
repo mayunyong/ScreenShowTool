@@ -24,8 +24,9 @@ QPlayer::QPlayer(QWidget *parent)
 	m_pContorlWgt->hide();
 	m_pHeaderWgt->hide();
 
-	connect(m_pHeaderWgt, SIGNAL(SignCloseWdgt()), this, SLOT(close()));
+	//connect(m_pHeaderWgt, SIGNAL(SignCloseWdgt()), this, SLOT(hide()));
 	connect(m_pContorlWgt, SIGNAL(SignalVideoPlayFinish()), this, SLOT(close()));
+	connect(m_pPlayer, SIGNAL(videoAvailableChanged(bool)), this, SLOT(SlotShowWgt(bool)));
 	//connect(m_pPlayer, SIGNAL(error(QMediaPlayer::Error)), this, SLOT(handleError()));
 }
 
@@ -37,6 +38,7 @@ QPlayer::~QPlayer()
 //！播放视频
 void QPlayer::PlayVideo(const QString& strVideoPath)
 {
+	m_pContorlWgt->hide();
 	if(!QFileInfo::exists(strVideoPath)
 		|| !m_pContorlWgt
 		|| !m_pPlayer)
@@ -48,30 +50,9 @@ void QPlayer::PlayVideo(const QString& strVideoPath)
 	m_pPlayer->play();
 	m_pContorlWgt->InitStartPlay();
 
-	if(isHidden())
-	{
-		QDesktopWidget* desktop = QApplication::desktop();
-		if(desktop)
-		{
-			int iCount = desktop->screenCount();
-			int iNum = 	desktop->primaryScreen();
-			if (iCount > 1)
-			{
-				for (int iIndex = 0; iIndex < iCount; iIndex++)
-				{
-					if(iNum != iIndex)
-					{
-						iNum = iIndex;
-						break;
-					}
-				}
-			}
-
-			showFullScreen();
-			this->setGeometry(desktop->screenGeometry(iNum)); 
-		}
-	}
+	//SlotPlaying();
 }
+
 
 //鼠标移动事件
 void QPlayer::mouseMoveEvent(QMouseEvent *ev)
@@ -128,5 +109,33 @@ void QPlayer::mouseMoveEvent(QMouseEvent *ev)
 void QPlayer::closeEvent(QCloseEvent* ev)
 {
 	m_pPlayer->stop();
+}
+
+//!显示播放器
+void QPlayer::SlotShowWgt(bool)
+{
+	if(isHidden())
+	{
+		QDesktopWidget* desktop = QApplication::desktop();
+		if(desktop)
+		{
+			int iCount = desktop->screenCount();
+			int iNum = 	desktop->primaryScreen();
+			if (iCount > 1)
+			{
+				for (int iIndex = 0; iIndex < iCount; iIndex++)
+				{
+					if(iNum != iIndex)
+					{
+						iNum = iIndex;
+						break;
+					}
+				}
+			}
+
+			show();
+			this->setGeometry(desktop->screenGeometry(iNum)); 
+		}
+	}
 }
 

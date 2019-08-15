@@ -9,7 +9,7 @@
 #include <QJsonArray>
 #include <QDir>
 
-#define RLUE_CONFIG         "/ruleConf"
+#define RLUE_CONFIG         "./ruleConf"
 #define SYS_CONFIG          "./sysConf"
 #define SYS_CONFIG_SYSTEM   "system"
 #define SYS_CONFIG_DIRPATH  "dirpath"
@@ -207,6 +207,7 @@ bool CPlayData::ReadSysData(const QString &strFilePath)
 	iniFile.setIniCodec("UTF-8");
 	QString strValue = iniFile.value(SYS_CONFIG_DIRPATH_KEY).toString();
 	if (strValue.isEmpty() || 
+		!QFileInfo::exists(strValue)||
 		(!strFilePath.isEmpty()&&
 		  0 != strValue.compare(strVideoDir)
 		 )
@@ -264,7 +265,7 @@ bool CPlayData::ReadRuleData()
     {
         return true;
     }*/
-    QFile loadFile(m_strFilePath + RLUE_CONFIG);
+    QFile loadFile(RLUE_CONFIG);
 
     if (!loadFile.open(QIODevice::ReadOnly))
     {

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>QHome5Btn_800</class>
- <widget class="QPushButton" name="QHome5Btn_1080">
+ <widget class="QPushButton" name="QHome5Btn_800">
   <property name="geometry">
    <rect>
     <x>0</x>

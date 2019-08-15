@@ -22,7 +22,6 @@ private:
 
 	//void AddNewBtn(double wPercent,double hPercent);
 signals:
-	void SignalClose();
 	void SignalSet();
 
 private:

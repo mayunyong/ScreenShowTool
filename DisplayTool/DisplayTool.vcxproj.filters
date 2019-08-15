@@ -51,6 +51,9 @@
     <Filter Include="Form Files\1280_800">
       <UniqueIdentifier>{c54f7868-5a0e-4308-bc5d-47854d84022b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="old">
+      <UniqueIdentifier>{38c5e19e-84f3-4ec7-8e30-2ede8a6ad32b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -89,9 +92,6 @@
     <ClCompile Include="GeneratedFiles\Release\moc_qcontrolwidgt.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
-    <ClCompile Include="qhomebtnitem.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="GeneratedFiles\Debug\moc_qhomebtnitem.cpp">
       <Filter>Generated Files\Debug</Filter>
     </ClCompile>
@@ -112,9 +112,6 @@
     </ClCompile>
     <ClCompile Include="PlayData.cpp">
       <Filter>Data</Filter>
-    </ClCompile>
-    <ClCompile Include="displaytool.cpp">
-      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="QFixMainWindow.cpp">
       <Filter>Source Files</Filter>
@@ -143,17 +140,11 @@
     <ClCompile Include="GeneratedFiles\Release\moc_QBGBaseWgt.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
-    <ClCompile Include="QBtnImgLabel.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="GeneratedFiles\Debug\moc_QBtnImgLabel.cpp">
       <Filter>Generated Files\Debug</Filter>
     </ClCompile>
     <ClCompile Include="GeneratedFiles\Release\moc_QBtnImgLabel.cpp">
       <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="QCenterTextEdit.cpp">
-      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="GeneratedFiles\Debug\moc_QCenterTextEdit.cpp">
       <Filter>Generated Files\Debug</Filter>
@@ -169,9 +160,6 @@
     </ClCompile>
     <ClCompile Include="GeneratedFiles\Release\moc_QFixSecondPage.cpp">
       <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="QSecondBtnItem.cpp">
-      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="GeneratedFiles\Debug\moc_QSecondBtnItem.cpp">
       <Filter>Generated Files\Debug</Filter>
@@ -232,9 +220,6 @@
     </ClCompile>
     <ClCompile Include="QHome4Btn_1080.cpp">
       <Filter>1080_800</Filter>
-    </ClCompile>
-    <ClCompile Include="QHomeTextBtn.cpp">
-      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="GeneratedFiles\Debug\moc_QHomeTextBtn.cpp">
       <Filter>Generated Files\Debug</Filter>
@@ -370,6 +355,24 @@
     </ClCompile>
     <ClCompile Include="QLabeMax_1920.cpp">
       <Filter>1080_800</Filter>
+    </ClCompile>
+    <ClCompile Include="displaytool.cpp">
+      <Filter>old</Filter>
+    </ClCompile>
+    <ClCompile Include="QBtnImgLabel.cpp">
+      <Filter>old</Filter>
+    </ClCompile>
+    <ClCompile Include="QCenterTextEdit.cpp">
+      <Filter>old</Filter>
+    </ClCompile>
+    <ClCompile Include="QSecondBtnItem.cpp">
+      <Filter>old</Filter>
+    </ClCompile>
+    <ClCompile Include="qhomebtnitem.cpp">
+      <Filter>old</Filter>
+    </ClCompile>
+    <ClCompile Include="QHomeTextBtn.cpp">
+      <Filter>old</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

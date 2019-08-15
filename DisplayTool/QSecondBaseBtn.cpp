@@ -15,23 +15,14 @@ QSecondBaseBtn::~QSecondBaseBtn()
 
 void QSecondBaseBtn::ShowPlayData()
 {
-	if(!m_pPlayData)
+	if(!m_pPlayData || !m_pNOLabel || !m_pNameLabel)
 	{
 		return;
 	}
 
-	if(m_pNOLabel)
-	{
-		QFont font = m_pNOLabel->font();
-		font.setItalic(true);//Ğ±Ìå
-		m_pNOLabel->setFont(font);
-		//m_pNOLabel->set
-		m_pNOLabel->setText(QString("%1").arg(m_pPlayData->displayNum));
-	}
-	if(m_pNameLabel)
-	{
-		m_pNameLabel->setText(m_pPlayData->displayName);
-	}
+	m_pNOLabel->setText(QString("%1").arg(m_pPlayData->displayNum));
+	m_pNameLabel->setText(m_pPlayData->displayName);
+
 	if(QPlayInfo::file == m_pPlayData->fileType)
 	{
 		m_pNameLabel->setStyleSheet(QStringLiteral("background:transparent;color: white;font: 15px \"Î¢ÈíÑÅºÚ\";"));
@@ -40,5 +31,6 @@ void QSecondBaseBtn::ShowPlayData()
 	{
 		m_pNameLabel->setStyleSheet(QStringLiteral("background:transparent;color: #02e4fa;font: 15px \"Î¢ÈíÑÅºÚ\";"));
 	}
+
 	show();
 }

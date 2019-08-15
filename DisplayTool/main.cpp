@@ -16,7 +16,7 @@ void setAutoStart(bool is_auto_start)
 	QSettings settings(REG_RUN, QSettings::NativeFormat); 
 	if(is_auto_start)
 	{
-		QString application_path = QApplication::applicationFilePath();
+		//QString application_path = QApplication::applicationFilePath();
 		QVariant varPath = settings.value(application_name, NULL);
 		QString strStartPath = varPath.toString();
 

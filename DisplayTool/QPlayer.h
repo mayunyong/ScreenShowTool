@@ -21,6 +21,10 @@ public:
 	//！播放指定目录视频
 	void PlayVideo(const QString& strVideoPath);
 
+private slots:
+		void SlotPlaying();
+		void SlotMediaStatus(QMediaPlayer::MediaStatus estatus);
+		void SlotShowWgt(bool);
 private:
 	Ui::QPlayer ui;
 
@@ -33,9 +37,12 @@ private:
 	//！底部控制控件
 	QControlWidgt* m_pContorlWgt;
 	
+	
 private:
 	void mouseMoveEvent(QMouseEvent *ev);
 	void closeEvent(QCloseEvent* ev);
+
+	
 };
 
 #endif // QPLAYER_H

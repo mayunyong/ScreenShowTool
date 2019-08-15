@@ -17,6 +17,7 @@ public:
 	~QFixMainWindow();
 
 public:
+	//!显示首页
 	void ShowHomePage();
 
 private slots:
@@ -30,8 +31,9 @@ private:
 	//!播放数据
 	CPlayData* m_pPlayDataObj;
 	QPlayInfo* m_pAllPlayInfo;
+	//!选择窗口
 	QFileDialog *m_pFileDlg;
-	//QPlayData* m_pPlayData;
+
 	//！播放器
 	QPlayer* m_pPlayer;
 };

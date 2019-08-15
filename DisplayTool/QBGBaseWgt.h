@@ -19,23 +19,28 @@ public:
 	~QBGBaseWgt();
 
 public:
+	//!初始界面信息
 	void InitUIInfo(const QRect& deskRect, const QPlayInfo* pPlayInfo);
 
 protected:
-	void resizeEvent(QResizeEvent * event);
-	void paintEvent(QPaintEvent *event);
 
+	
+	//!添加新按钮
 	void AddNewBtn(QVideoBaseBtn* pBtn, QPoint pPos);
+	//!添加文本提示
 	void AddNewLabel(QLabel* pBtn, QPoint pPos);
-	//!添加按钮
-	void AddNewBtn(QPoint pPos);
 
+	//!初始所有按钮
 	virtual void InitAllButton() = 0;
+	//!显示指定页
 	void ShowPage(int iPage = 1);
 
 signals:
+	//!点击按钮
 	void SignalClkIndexBtn(const QPlayInfo* pStPlayDta);
 	void SignalMin();
+	void SignalClose();
+
 protected:
 	//!空间大小
 	QRect m_WgtRect;
@@ -55,6 +60,7 @@ protected:
 	const QPlayInfo* m_pPlayInfo;
 	//!初始化标志
 	bool m_bInifFlag;
+	//!页数
 	int m_iCurPage;
 	int m_iAllPageSize;
 };

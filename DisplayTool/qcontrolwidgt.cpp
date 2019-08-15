@@ -7,7 +7,7 @@ QControlWidgt::QControlWidgt(QWidget *parent, QMediaPlayer *pPlayer)
 	,m_iduration(0)
 {
 	ui.setupUi(this);
-
+	//setWindowFlags(Qt::FramelessWindowHint | Qt::WindowStaysOnTopHint|Qt::Tool);
 	connect(ui.horizontalSlider, SIGNAL(sliderMoved(int)), this, SLOT(seek(int)));
 	connect(ui.horizontalSlider, SIGNAL(valueClkChanged(int)), this, SLOT(seek(int)));
 
@@ -70,6 +70,7 @@ void QControlWidgt:: mediaStateChanged(QMediaPlayer::State ePlayState)
 	case QMediaPlayer::PlayingState:
 		{
 			ui.playButton->setIcon(style()->standardIcon(QStyle::SP_MediaPause));
+			emit SignalVideoPlaying();
 		}
 		break;
 	case QMediaPlayer::StoppedState:
@@ -128,17 +129,14 @@ void QControlWidgt::seek(int iPos)
 //£¡µã»÷²¥·Å°´Å¥
 void QControlWidgt::slotPlayBtn()
 {
-	if(!m_pPlayer)
-	{
-		return;
-	}
-
 	switch(m_pPlayer->state()) {
 	case QMediaPlayer::PlayingState:
 		m_pPlayer->pause();
+		ui.playButton->setIcon(style()->standardIcon(QStyle::SP_MediaPlay));
 		break;
 	default:
 		m_pPlayer->play();
+		ui.playButton->setIcon(style()->standardIcon(QStyle::SP_MediaPause));
 		break;
 	}
 }

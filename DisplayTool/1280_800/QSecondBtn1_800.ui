@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>QSecondBtn1_800</class>
- <widget class="QPushButton" name="QSecondBtn1_1080">
+ <widget class="QPushButton" name="QSecondBtn1_800">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -20,7 +20,7 @@ background-image: url(:/DisplayTool_1280/Second1.png);</string>
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>60</x>
+     <x>57</x>
      <y>110</y>
      <width>111</width>
      <height>61</height>
@@ -44,7 +44,7 @@ color: rgb(2, 228, 250);</string>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>80</x>
+     <x>78</x>
      <y>70</y>
      <width>71</width>
      <height>41</height>

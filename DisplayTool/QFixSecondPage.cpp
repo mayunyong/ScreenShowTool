@@ -20,11 +20,17 @@ QFixSecondPage::QFixSecondPage(QWidget *parent)
 	ui.setupUi(this);
 	//InitHomeButton();
 	m_ePageType = Page_Second;
-	m_pBackGroundixmap= new QPixmap(":/DisplayTool/SecondPage.png");
+	QString strValue = ":/DisplayTool/SecondPage.png";
 
+#ifdef SCRENN_1280_800
+	strValue = ":/DisplayTool_1280/SecondPage.png";
+#endif // _DEBUG
+
+	m_pBackGroundixmap= new QPixmap(strValue);
 	connect(ui.toolButton, SIGNAL(clicked()), this, SLOT(SlotClkBack()));
 	connect(ui.toolButton_2, SIGNAL(clicked()), this, SLOT(SlotClkNext()));
 	connect(ui.toolButton_3, SIGNAL(clicked()), this, SIGNAL(SignalMin()));
+	connect(ui.tBtn_Close, SIGNAL(clicked()), this, SIGNAL(SignalClose()));
 
 	const QMap<int, QPoint>& posMap = QGlobalSystemConfig::Instance()->GetSecondBtnPosMap();
 	AddNewBtn(new QSecondBtn1_1080(this), posMap.contains(1)? posMap[1]:QPoint(86, 287));
@@ -69,10 +75,10 @@ void QFixSecondPage::InitAllButton()
 
 void QFixSecondPage::SlotClkNext()
 {
-	QSound::play(":/DisplayTool/1.wav");
-	//throw std::logic_error("The method or operation is not implemented.");
-	int iPageIndex = m_iCurPage + 1;
+	//QSound::play(":/DisplayTool/1.wav");
+	QSound::play("sound/1.wav");
 
+	int iPageIndex = m_iCurPage + 1;
 	if(m_pPlayInfo &&
 		m_pPlayInfo->playData)
 	{
@@ -90,7 +96,8 @@ void QFixSecondPage::SlotClkNext()
 
 void QFixSecondPage::SlotClkBack()
 {
-	QSound::play(":/DisplayTool/1.wav");
+	//QSound::play(":/DisplayTool/1.wav");
+	QSound::play("sound/1.wav");
 
 	if(m_pPlayInfo)
 	{

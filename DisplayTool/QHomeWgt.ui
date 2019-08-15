@@ -86,19 +86,20 @@
        <widget class="QToolButton" name="tBtn_Set">
         <property name="minimumSize">
          <size>
-          <width>30</width>
-          <height>32</height>
+          <width>36</width>
+          <height>36</height>
          </size>
         </property>
         <property name="styleSheet">
          <string notr="true">QToolButton
+
 {
 backGround:transparent;
 }
 QToolButton:hover
 {
 backGround:transparent;
-background-image: url(:/DisplayTool/Resources/set.jpg);
+background-image: url(:/DisplayTool/set.png);
 }
 </string>
         </property>

@@ -15,8 +15,10 @@ public:
 	~QVideoBaseBtn();
 
 public:
+	//!设置视频数据
 	virtual void setPlayData(int iBtnIndex,  const QPlayInfo* pStPlayDta);
-	void setUIInfo(EN_PageType m_ePageType, int iNum, bool bVideoFlag = false);
+	//!设置界面信息
+	//void setUIInfo(EN_PageType m_ePageType, int iNum, bool bVideoFlag = false);
 
 signals:
 	void SignalClkIndexBtn(const QPlayInfo* pStPlayDta);
@@ -25,6 +27,7 @@ private slots:
 	void SlotClickBtn();
 
 protected:
+	//!显示数据
 	virtual void ShowPlayData();
 
 protected:

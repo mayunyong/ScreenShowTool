@@ -13,16 +13,15 @@ public:
 	~QFixSecondPage();
 
 private:
+	//!≥ı º∞¥≈•
 	void InitAllButton();
 
-
-	private slots:
+private slots:
 	void SlotClkBack();
-		void SlotClkNext();
+	void SlotClkNext();
 
 private:
 	Ui::QFixSecondPage ui;
-	
 };
 
 #endif // QFIXSECONDPAGE_H
