@@ -766,5 +766,6 @@
   <ItemGroup>
     <None Include="Resources\home\home4.png" />
     <None Include="Resources\bitbug_favicon.ico" />
+    <None Include="Resources\DisPlayTool.ico" />
   </ItemGroup>
 </Project>

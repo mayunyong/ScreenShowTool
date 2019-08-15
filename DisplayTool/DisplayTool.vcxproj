@@ -1303,6 +1303,7 @@
       <SubType>Designer</SubType>
     </CustomBuild>
     <None Include="Resources\bitbug_favicon.ico" />
+    <None Include="Resources\DisPlayTool.ico" />
     <None Include="Resources\home\home4.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
