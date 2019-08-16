@@ -53,7 +53,8 @@
       </size>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: transparent;</string>
+      <string notr="true">background-color: transparent;
+background-color: rgb(255, 255, 255);</string>
      </property>
      <layout class="QGridLayout" name="gridLayout_2">
       <item row="1" column="0">
