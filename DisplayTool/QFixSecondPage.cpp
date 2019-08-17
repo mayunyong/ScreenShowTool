@@ -26,6 +26,7 @@ QFixSecondPage::QFixSecondPage(QWidget *parent)
 	strValue = ":/DisplayTool_1280/SecondPage.png";
 #endif // _DEBUG
 
+	ui.tBtn_Close->hide();
 	m_pBackGroundixmap= new QPixmap(strValue);
 	connect(ui.toolButton, SIGNAL(clicked()), this, SLOT(SlotClkBack()));
 	connect(ui.toolButton_2, SIGNAL(clicked()), this, SLOT(SlotClkNext()));

@@ -32,6 +32,8 @@ QHomeWgt::QHomeWgt(QWidget *parent)
 	connect(ui.toolButton_3, SIGNAL(clicked()), this, SIGNAL(SignalMin()));
 	connect(ui.tBtn_Close, SIGNAL(clicked()), this, SIGNAL(SignalClose()));
 	connect(ui.tBtn_Set, SIGNAL(clicked()), this, SIGNAL(SignalSet()));
+
+	ui.tBtn_Close->hide();
 }
 
 QHomeWgt::~QHomeWgt()

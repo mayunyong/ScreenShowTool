@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
 	QString strPlugins = QCoreApplication::applicationDirPath() + "/plugins";
 	QCoreApplication::addLibraryPath(strPlugins);
 
-	setAutoStart(true);
+	//setAutoStart(true);
 	//DisplayTool w;
 	QFixMainWindow w;
 	w.ShowHomePage();
