@@ -330,7 +330,7 @@
 			{
 				"name": "企业",
 				"fileName": "企业",
-				"isFolder": "1",
+				"isFolder": "0",
 				"display": "3",
 				"page": {
 					"desc": {

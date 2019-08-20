@@ -347,7 +347,7 @@ void CPlayData::GetJsonData(QPlayInfo &playInfo, QJsonObject &jsonObj, QString s
         QFileInfo file(playInfo.filePath);
         playInfo.isExist = file.isDir() && file.exists();
     }
-    else if (QPlayInfo::file == playInfo.fileType && !playInfo.parentName.isEmpty())
+    else if (QPlayInfo::file == playInfo.fileType /*&& !playInfo.parentName.isEmpty()*/)
     {
         playInfo.isExist = false;
         QDir dir(m_strFilePath + playInfo.parentName);
